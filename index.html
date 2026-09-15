@@ -1,4 +1,4268 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1224"><title>NeuroSpark · Dad's Training Games</title><style>:root{--bg:#0b1224;--panel:#121d35;--panel2:#172642;--text:#edf4ff;--muted:#9cafca;--cyan:#51d4ed;--violet:#9077ff;--green:#45d19a;--orange:#ffb454;--line:#263653}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#244a9a 0,#0b1224 42%);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}.top{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:16px max(18px,calc((100% - 1120px)/2));background:#0b1224dd;border-bottom:1px solid #ffffff12;backdrop-filter:blur(14px)}.brand{font-weight:950;letter-spacing:.06em}.brand i{font-style:normal;color:var(--cyan)}.nav{display:flex;gap:18px;color:var(--muted);font-size:.88rem}.nav a{color:inherit;text-decoration:none}.profile{background:#213152;border:1px solid #3a4e75;border-radius:999px;padding:7px 11px;font-weight:800;font-size:.82rem}.wrap{width:min(1120px,100%);margin:auto;padding:34px 18px 55px}.hero{display:flex;justify-content:space-between;align-items:end;gap:20px}.eyebrow{color:var(--cyan);font-size:.72rem;font-weight:900;letter-spacing:.17em;text-transform:uppercase}.hero h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1;margin:8px 0}.hero p{color:var(--muted);max-width:650px;margin:0;line-height:1.5}.brain{font-size:4rem;background:#ffffff10;border:1px solid #ffffff18;border-radius:24px;padding:16px}.tabs{display:flex;gap:9px;flex-wrap:wrap;margin:30px 0 20px}.tab{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:9px 14px;font:inherit;font-size:.82rem;cursor:pointer}.tab.active,.tab:hover{background:var(--cyan);border-color:var(--cyan);color:#071527}.section-title{display:flex;justify-content:space-between;align-items:center}.section-title h2{font-size:1.05rem;margin:10px 0}.section-title span{color:var(--muted);font-size:.8rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#172642,#101a30);border:1px solid var(--line);border-radius:18px;padding:14px;min-height:215px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 18px 35px #0004;transition:.18s}.card:hover{transform:translateY(-3px);border-color:#4f6b9d}.art{height:102px;border-radius:12px;display:grid;place-items:center;font-size:3rem;margin-bottom:14px;background:linear-gradient(135deg,#274d88,#392b7d);overflow:hidden}.card:nth-child(2) .art{background:linear-gradient(135deg,#176b72,#24407e)}.card:nth-child(3) .art{background:linear-gradient(135deg,#703c86,#243e75)}.card:nth-child(4) .art{background:linear-gradient(135deg,#246d56,#7e5a2f)}.card:nth-child(5) .art{background:linear-gradient(135deg,#6d4caa,#204d80)}.card:nth-child(6) .art{background:linear-gradient(135deg,#8b5429,#4a2a52)}.card:nth-child(7) .art{background:linear-gradient(135deg,#26718d,#14435c)}.card h3{font-size:1rem;margin:0 0 5px}.desc{font-size:.82rem;color:var(--muted);margin:0 0 12px}.foot{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.73rem}.tag{color:var(--cyan);font-size:.7rem;font-weight:850}.play{border:0;background:var(--cyan);color:#071527;border-radius:999px;padding:8px 12px;font:inherit;font-size:.74rem;font-weight:900;cursor:pointer}.progress{margin-top:24px;background:#111d34;border:1px solid var(--line);border-radius:18px;padding:17px}.progress-head{display:flex;justify-content:space-between;font-size:.86rem}.bar{height:8px;border-radius:99px;background:#263653;margin-top:11px;overflow:hidden}.bar i{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--cyan),var(--green));transition:.4s}.modal{display:none;position:fixed;inset:0;z-index:8;background:#050a16bb;backdrop-filter:blur(8px);padding:20px;place-items:center}.modal.show{display:grid}.sheet{width:min(540px,100%);background:#121d35;border:1px solid #3a4e75;border-radius:22px;padding:20px;box-shadow:0 25px 80px #0008}.sheet-head{display:flex;justify-content:space-between;align-items:start}.sheet h2{margin:0}.close{border:0;background:#253653;color:#fff;border-radius:50%;width:34px;height:34px;font-size:1.3rem;cursor:pointer}.gamebox{margin:20px 0;padding:18px;min-height:230px;border-radius:16px;background:#0b1224;display:grid;place-items:center;text-align:center}.action{border:0;border-radius:12px;background:var(--cyan);color:#071527;padding:11px 16px;font:inherit;font-weight:900;cursor:pointer}.reaction-dot{width:150px;height:150px;border-radius:22px;background:#202d47;display:grid;place-items:center;color:var(--muted);cursor:pointer;font-weight:900}.reaction-dot.go{background:#3bd38e;color:#052c20}.memory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:min(100%,350px)}.memory-grid button{aspect-ratio:1;border:0;border-radius:9px;background:#27446f;color:#fff;font-size:1.3rem;cursor:pointer}.memory-grid button.open{background:#51d4ed;color:#071527}.choices{display:flex;justify-content:center;gap:9px;flex-wrap:wrap}.choice{border:1px solid #3a4e75;background:#1d2d4c;color:#fff;border-radius:10px;padding:10px 14px;font:inherit;font-weight:800;cursor:pointer}.bigword{font-size:3rem;font-weight:950;margin:18px}.input{padding:11px;border:1px solid #3a4e75;background:#0b1224;color:#fff;border-radius:10px;font:inherit;text-align:center;width:150px}.note{font-size:.76rem;color:var(--muted);line-height:1.5;margin:0}.empty{grid-column:1/-1;color:var(--muted);padding:30px;text-align:center}@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}.hero{align-items:start}.brain{font-size:2.6rem;padding:10px}.nav{display:none}}@media(max-width:440px){.grid{grid-template-columns:1fr}.top{padding:14px}.wrap{padding:25px 13px 40px}.card{min-height:205px}}
-</style></head><body><header class="top"><div class="brand">NEURO<span>SPARK</span></div><nav class="nav"><a href="#games">Games</a><a href="#progress">Progress</a><a href="#about">About</a></nav><div class="profile">Dad · 0 days</div></header><main class="wrap"><section class="hero"><div><div class="eyebrow">Daily training games</div><h1>Training Games</h1><p>Short, focused exercises for memory, attention, flexibility, speed, reasoning, math, and language.</p></div><div class="brain">✦</div></section><div class="tabs" id="tabs"></div><div class="section-title" id="games"><h2>Today’s games</h2><span>7 original exercises</span></div><section class="grid" id="grid"></section><section class="progress" id="progress"><div class="progress-head"><strong>Today’s progress</strong><span id="progressText">0 of 3 sessions</span></div><div class="bar"><i id="progressBar"></i></div></section><p class="note" id="about">NeuroSpark is an original personal project inspired by the general idea of cognitive training. It is for entertainment and mental activity, not diagnosis or medical treatment. Stop if you feel tired.</p></main><div class="modal" id="modal"><article class="sheet"><div class="sheet-head"><div><div class="eyebrow" id="modalTag"></div><h2 id="modalTitle"></h2></div><button class="close" id="close">×</button></div><div class="gamebox" id="gamebox"></div><p class="note">Play at a comfortable pace. Your score is saved only in this browser.</p></article></div><script>
-const games=[['speed','Reflex Pulse','Speed','Click when the panel turns green.','⚡'],['memory','Memory Link','Memory','Remember matching symbols.','◈'],['attention','Color Focus','Attention','Choose the ink color, not the word.','◉'],['flexibility','Rule Switch','Flexibility','Switch between two simple rules.','↔'],['reasoning','Mini Grid','Reasoning','Complete a small logic puzzle.','▦'],['math','Quick Numbers','Math','Solve a short mental arithmetic problem.','＋'],['language','Word Steps','Language','Change one letter to reach the target word.','Aa']];let filter='All',selected=0,done=+localStorage.getItem('neuroDone')||0,best=+localStorage.getItem('neuroBest')||0;const $=x=>document.getElementById(x);function renderTabs(){let cats=['All',...games.map(g=>g[2])];$('tabs').innerHTML=cats.map(c=>`<button class="tab ${c===filter?'active':''}">${c}</button>`).join('');$('tabs').querySelectorAll('button').forEach(b=>b.onclick=()=>{filter=b.textContent;render()})}function render(){renderTabs();let list=filter==='All'?games:games.filter(g=>g[2]===filter);$('grid').innerHTML=list.map(g=>`<article class="card"><div><div class="art">${g[4]}</div><h3>${g[1]}</h3><p class="desc">${g[3]}</p></div><div class="foot"><span class="tag">${g[2]}</span><button class="play" data-game="${games.indexOf(g)}">Play</button></div></article>`).join('');$('grid').querySelectorAll('[data-game]').forEach(b=>b.onclick=()=>openGame(+b.dataset.game));$('progressText').textContent=Math.min(done,3)+' of 3 sessions';$('progressBar').style.width=Math.min(100,done/3*100)+'%'}function complete(points){done++;best=Math.max(best,points);localStorage.setItem('neuroDone',done);localStorage.setItem('neuroBest',best);render()}function openGame(i){selected=i;let g=games[i];$('modalTag').textContent=g[2];$('modalTitle').textContent=g[1];$('modal').classList.add('show');game(g[0])}function close(){ $('modal').classList.remove('show') }function game(type){let b=$('gamebox');if(type==='speed')return reaction(b);if(type==='memory')return memory(b);if(type==='attention')return stroop(b);if(type==='flexibility')return switcher(b);if(type==='reasoning')return reasoning(b);if(type==='math')return math(b);word(b)}function reaction(b){b.innerHTML='<div><div class="reaction-dot" id="dot">Start</div><p id="msg">Tap Start, then tap the panel when it turns green.</p></div>';let d=$('dot'),msg=$('msg'),armed=false,timer,start;d.onclick=()=>{if(!armed){armed=true;d.textContent='Wait…';timer=setTimeout(()=>{d.classList.add('go');d.textContent='TAP';start=performance.now()},800+Math.random()*1800)}else if(d.classList.contains('go')){let t=Math.round(performance.now()-start);msg.textContent='Reaction time: '+t+' ms';complete(Math.max(1,1000-t));armed=false}else{clearTimeout(timer);msg.textContent='Too early—try again';armed=false}}}function memory(b){let s=['●','★','◆','♥'],deck=[...s,...s].sort(()=>Math.random()-.5),open=[],matches=0;b.innerHTML='<div><div class="memory-grid">'+deck.map((_,i)=>`<button data-i="${i}">?</button>`).join('')+'</div><p id="msg">Find all four pairs.</p></div>';let cells=[...b.querySelectorAll('[data-i]')];cells.forEach((c,i)=>c.onclick=()=>{if(open.length===2||open.includes(i)||c.classList.contains('open'))return;c.textContent=deck[i];c.classList.add('open');open.push(i);if(open.length===2){if(deck[open[0]]===deck[open[1]]){matches++;open.forEach(j=>cells[j].style.background='#45d19a');open=[];if(matches===4)complete(100)}else setTimeout(()=>{open.forEach(j=>{cells[j].textContent='?';cells[j].classList.remove('open')});open=[]},550)}})}function stroop(b){let cs=[['RED','red'],['BLUE','blue'],['GREEN','green'],['YELLOW','yellow']],word=cs[Math.floor(Math.random()*4)],ink=cs[Math.floor(Math.random()*4)];b.innerHTML=`<div><div class="bigword ${ink[1]}">${word[0]}</div><div class="choices">${cs.map(c=>`<button class="choice" data-c="${c[1]}">${c[0]}</button>`).join('')}</div><p id="msg">Choose the ink color.</p></div>`;b.querySelectorAll('[data-c]').forEach(x=>x.onclick=()=>{if(x.dataset.c===ink[1]){$('msg').textContent='Correct!';complete(100)}else $('msg').textContent='Look at the ink, not the word.'})}function switcher(b){let n=Math.floor(Math.random()*10),isNum=Math.random()<.5,val=isNum?n%2?'7':'8':n%2?'A':'B',answers=isNum?['ODD','EVEN']:['VOWEL','CONSONANT'];b.innerHTML=`<div><p>${isNum?'NUMBER: choose odd or even':'LETTER: choose vowel or consonant'}</p><div class="bigword">${val}</div><div class="choices">${answers.map(x=>`<button class="choice" data-a="${x}">${x}</button>`).join('')}</div><p id="msg">Choose the correct rule.</p></div>`;b.querySelectorAll('[data-a]').forEach(x=>x.onclick=()=>{$('msg').textContent='Answer recorded.';complete(80)})}function reasoning(b){b.innerHTML='<div><div class="bigword">1 · 2 · 3 · ?</div><div class="choices"><button class="choice" data-ok="4">4</button><button class="choice">5</button><button class="choice">6</button></div><p id="msg">Choose the next number.</p></div>';b.querySelectorAll('.choice').forEach(x=>x.onclick=()=>{$('msg').textContent=x.dataset.ok?'Correct!':'Try the pattern again.';if(x.dataset.ok)complete(90)})}function math(b){let x=7,y=8,ans=x*y;b.innerHTML=`<div><div class="bigword">${x} × ${y} = ?</div><input class="input" id="answer" inputmode="numeric" placeholder="Answer"><br><button class="action" id="check">Check</button><p id="msg"></p></div>`;$('check').onclick=()=>{let ok=+$('answer').value===ans;$('msg').textContent=ok?'Correct!':'Try again.';if(ok)complete(90)}}function word(b){b.innerHTML='<div><div class="bigword">CAT → ? → DOG</div><div class="choices"><button class="choice" data-ok>COT</button><button class="choice">MIND</button><button class="choice">WORD</button></div><p id="msg">Change one letter at a time.</p></div>';b.querySelectorAll('.choice').forEach(x=>x.onclick=()=>{$('msg').textContent=x.dataset.ok?'Correct next step!':'That word is not next.';if(x.dataset.ok)complete(90)})}$('close').onclick=close;$('modal').onclick=e=>{if(e.target===$('modal'))close()};render();
-</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroFlex - Offline Brain Training (Lumosity)</title>
+  <meta name="description" content="100% Single-File Offline Lumosity Clone. 0 dependencies, 0 internet needed.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='40' fill='%230f172a'/%3E%3Ccircle cx='96' cy='96' r='60' fill='none' stroke='%2338bdf8' stroke-width='8'/%3E%3Cpath d='M70,96 L90,120 L130,75' fill='none' stroke='%2338bdf8' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+/* ==========================================================================
+   NEUROFLEX - Single File Offline Lumosity Clone Design System
+   ========================================================================== */
+
+:root {
+  --bg-main: #0a0f1d;
+  --bg-card: rgba(22, 30, 49, 0.85);
+  --bg-card-hover: rgba(30, 41, 67, 0.95);
+  --border-card: rgba(148, 163, 184, 0.15);
+  --border-focus: #38bdf8;
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --accent-memory: #0ea5e9;
+  --accent-speed: #f59e0b;
+  --accent-attention: #10b981;
+  --accent-flexibility: #ec4899;
+  --accent-problem: #8b5cf6;
+
+  --primary: #0284c7;
+  --primary-hover: #0369a1;
+  --success: #10b981;
+  --danger: #ef4444;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.08) 0px, transparent 50%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* Header & Navigation */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10, 15, 29, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-card);
+  padding: 0.75rem 1.5rem;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.brand-icon-svg {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+}
+
+.brand-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-offline-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-attention);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  text-transform: uppercase;
+}
+
+.main-nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-link {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active {
+  color: var(--text-primary);
+  background: rgba(14, 165, 233, 0.15);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+}
+
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.meta-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-full);
+  background: rgba(30, 41, 67, 0.6);
+  border: 1px solid var(--border-card);
+}
+
+.meta-chip .chip-val {
+  color: #38bdf8;
+}
+
+.btn-icon {
+  background: rgba(30, 41, 67, 0.6);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+}
+
+.btn-icon:hover {
+  background: rgba(51, 65, 85, 0.8);
+}
+
+/* Screen Management & Layout */
+.app-screen {
+  display: none;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  flex: 1;
+}
+
+.app-screen.active {
+  display: block;
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dashboard Screen */
+.dash-hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dash-hero-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dash-hero-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.hero-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.daily-progress-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.workout-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(30, 41, 67, 0.6);
+  border: 1px solid var(--border-card);
+  padding: 0.45rem 0.8rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.workout-pill.completed {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #34d399;
+}
+
+.workout-pill .pill-check {
+  font-weight: 800;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: white;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(2, 132, 199, 0.5);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: rgba(30, 41, 67, 0.8);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(51, 65, 85, 0.8);
+}
+
+/* Dashboard Radar Card */
+.dash-radar-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.radar-canvas-wrap {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radar-canvas-wrap canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Category Pillars Grid */
+.section-heading-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.25rem;
+}
+
+.section-heading-bar h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.section-heading-bar p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.25rem;
+}
+
+.category-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.cat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.cat-bpi {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.cat-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.cat-meta {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.btn-cat-play {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btn-cat-play:hover {
+  background: rgba(14, 165, 233, 0.2);
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+/* Games Hub */
+.games-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.game-hub-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.game-hub-card:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.game-hub-badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+}
+
+.game-hub-header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.game-hub-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.game-hub-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+}
+
+.game-hub-desc {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.game-hub-rule {
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 3px solid #38bdf8;
+  padding: 0.65rem 0.85rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  margin-bottom: 1.25rem;
+}
+
+.game-hub-stats {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(30, 41, 67, 0.4);
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.stat-lbl {
+  color: var(--text-muted);
+  margin-right: 0.25rem;
+}
+
+.btn-play-game {
+  background: var(--primary);
+  color: white;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.btn-play-game:hover {
+  background: var(--primary-hover);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+}
+
+/* Active Game Arena */
+.arena-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+}
+
+.arena-game-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.arena-icon {
+  font-size: 1.6rem;
+}
+
+.arena-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.arena-mode-badge {
+  background: rgba(14, 165, 233, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+.btn-exit-game {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #f87171;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-exit-game:hover {
+  background: rgba(239, 68, 68, 0.25);
+}
+
+.game-canvas-area {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Game HUD */
+.game-hud {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hud-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.hud-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.hud-val {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.hud-accent { color: #38bdf8; }
+.hud-bonus { color: #f59e0b; }
+
+.pulse-danger {
+  color: #ef4444 !important;
+  animation: pulse 0.6s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}
+
+/* Game 1: Memory Matrix */
+.strikes-container {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.strike-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(148, 163, 184, 0.2);
+  border: 1.5px solid rgba(148, 163, 184, 0.4);
+  transition: all 0.2s ease;
+}
+
+.strike-dot.active {
+  background: #ef4444;
+  border-color: #f87171;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+}
+
+.matrix-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.matrix-status-msg {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: var(--radius-full);
+  transition: all 0.2s ease;
+}
+
+.matrix-status-msg.memorize {
+  color: #38bdf8;
+  background: rgba(14, 165, 233, 0.15);
+}
+
+.matrix-status-msg.recall {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.15);
+}
+
+.matrix-status-msg.success {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.15);
+}
+
+.matrix-status-msg.fail {
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.matrix-board-wrapper {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 380px;
+}
+
+.matrix-grid {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.matrix-tile {
+  background: rgba(30, 41, 67, 0.7);
+  border: 2px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  outline: none;
+}
+
+.matrix-tile:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  background: rgba(51, 65, 85, 0.7);
+}
+
+.matrix-tile.highlighted {
+  background: #38bdf8;
+  border-color: #7dd3fc;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.7);
+  transform: scale(0.96);
+}
+
+.matrix-tile.correct {
+  background: #10b981;
+  border-color: #34d399;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.6);
+  pointer-events: none;
+}
+
+.matrix-tile.wrong {
+  background: #ef4444;
+  border-color: #f87171;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.6);
+  animation: shake 0.3s ease-in-out;
+}
+
+.matrix-tile.missed {
+  background: rgba(245, 158, 11, 0.5);
+  border-color: #f59e0b;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+/* Game 2: Speed Match */
+.speed-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.speed-question {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.speed-card-holder {
+  width: 220px;
+  height: 220px;
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speed-card {
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 41, 67, 0.7);
+  border: 2px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.speed-card.pop {
+  animation: popIn 0.12s ease-out;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.9); opacity: 0.7; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.correct-glow {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.6) !important;
+}
+
+.wrong-shake {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.6) !important;
+  animation: shake 0.25s ease-in-out;
+}
+
+.speed-controls {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 440px;
+}
+
+.btn-speed {
+  flex: 1;
+  padding: 1.25rem 1rem;
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  transition: all 0.12s ease;
+}
+
+.btn-speed:active { transform: scale(0.96); }
+.key-hint { font-size: 0.75rem; font-weight: 600; opacity: 0.75; }
+
+.btn-no {
+  background: rgba(239, 68, 68, 0.18);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #f87171;
+}
+
+.btn-no:hover {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: #ef4444;
+}
+
+.btn-yes {
+  background: rgba(16, 185, 129, 0.18);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #34d399;
+}
+
+.btn-yes:hover {
+  background: rgba(16, 185, 129, 0.3);
+  border-color: #10b981;
+}
+
+/* Game 3: Lost in Migration */
+.flock-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.flock-instruction {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.sky-container {
+  width: 100%;
+  max-width: 460px;
+  height: 200px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 2px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  overflow: hidden;
+}
+
+.sky-flash-correct {
+  background: rgba(16, 185, 129, 0.2) !important;
+  border-color: #10b981 !important;
+}
+
+.sky-flash-wrong {
+  background: rgba(239, 68, 68, 0.2) !important;
+  border-color: #ef4444 !important;
+  animation: shake 0.22s ease-in-out;
+}
+
+.flock-formation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.flock-formation.formation-vertical {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flock-formation.formation-v-shape {
+  gap: 12px;
+}
+
+.flock-formation.formation-v-shape .bird-wrap:nth-child(1),
+.flock-formation.formation-v-shape .bird-wrap:nth-child(5) {
+  transform: translateY(20px);
+}
+
+.flock-formation.formation-v-shape .bird-wrap:nth-child(2),
+.flock-formation.formation-v-shape .bird-wrap:nth-child(4) {
+  transform: translateY(10px);
+}
+
+.bird-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-bird svg {
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.7));
+}
+
+.dpad-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 1rem;
+}
+
+.dpad-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-dpad {
+  width: 68px;
+  height: 52px;
+  background: rgba(30, 41, 67, 0.8);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btn-dpad:hover {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: #38bdf8;
+}
+
+.btn-dpad:active { transform: scale(0.92); }
+.key-sub { font-size: 0.65rem; font-weight: 600; color: var(--text-muted); }
+
+.dpad-center-guide {
+  width: 68px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #38bdf8;
+}
+
+/* Game 4: Color Match */
+.color-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.color-rule-box {
+  background: rgba(14, 165, 233, 0.1);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+.color-rule-box strong { color: #38bdf8; }
+
+.color-cards-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 480px;
+}
+
+.stroop-card {
+  flex: 1;
+  height: 160px;
+  background: rgba(30, 41, 67, 0.7);
+  border: 2px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: var(--shadow-md);
+  transition: all 0.15s ease;
+}
+
+.card-indicator {
+  position: absolute;
+  top: 10px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+}
+
+.stroop-word {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.stroop-vs-divider {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-muted);
+}
+
+/* Game 5: Chalkboard Challenge */
+.chalkboard-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.chalkboard-prompt {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.chalkboard-frame {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 540px;
+  margin: 1.5rem 0;
+}
+
+.chalkboard-panel {
+  flex: 1;
+  height: 170px;
+  background: #0f1c24;
+  border: 3px solid #233845;
+  border-radius: var(--radius-md);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8), var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.15s ease;
+}
+
+.chalk-tag {
+  position: absolute;
+  top: 12px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #52798e;
+}
+
+.chalk-math {
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #e2e8f0;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
+}
+
+.chalk-separator {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #52798e;
+}
+
+.chalk-controls {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 540px;
+}
+
+.btn-chalk {
+  flex: 1;
+  padding: 1.1rem 0.5rem;
+  background: rgba(30, 41, 67, 0.8);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.12s ease;
+}
+
+.btn-chalk strong { font-size: 1.1rem; }
+.chalk-key-hint { font-size: 0.7rem; font-weight: 600; color: #38bdf8; }
+.chalk-sub-label { font-size: 0.72rem; color: var(--text-muted); }
+
+.btn-chalk:hover {
+  background: rgba(14, 165, 233, 0.2);
+  border-color: #38bdf8;
+}
+
+.btn-chalk:active { transform: scale(0.96); }
+
+/* Modals & Overlays */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 10, 19, 0.82);
+  backdrop-filter: blur(10px);
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal-overlay.active {
+  display: flex;
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-card {
+  background: #11192d;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  max-width: 560px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  padding: 2rem;
+}
+
+.modal-card-lg { max-width: 820px; }
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.modal-header { margin-bottom: 1.5rem; }
+.modal-header h2 { font-size: 1.6rem; font-weight: 800; }
+.modal-header p { color: var(--text-secondary); font-size: 0.9rem; }
+
+/* Result Modal */
+.res-score-box {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+}
+
+.res-score-lbl {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.res-score-num {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #38bdf8;
+  line-height: 1.1;
+  margin: 0.25rem 0;
+}
+
+.res-bpi-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.res-bpi-tag.positive { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+.res-bpi-tag.negative { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+.res-bpi-tag.neutral { background: rgba(148, 163, 184, 0.2); color: #cbd5e1; }
+
+.res-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.res-stat-item {
+  background: rgba(30, 41, 67, 0.5);
+  border: 1px solid var(--border-card);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.res-modal-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Analytics Modal */
+.analytics-metrics-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric-box {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  text-align: center;
+}
+
+.metric-box .m-lbl {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.metric-box .m-val {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #38bdf8;
+  margin-top: 0.25rem;
+}
+
+.analytics-charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.chart-card-box {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.chart-card-box h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.chart-card-box canvas {
+  width: 100%;
+  height: 220px;
+}
+
+.history-table-box {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.styled-table th, .styled-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.styled-table th {
+  background: rgba(30, 41, 67, 0.7);
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.styled-table tr:not(:last-child) td {
+  border-bottom: 1px solid var(--border-card);
+}
+
+.text-positive { color: #34d399; font-weight: 700; }
+.text-negative { color: #f87171; font-weight: 700; }
+.empty-state { text-align: center; color: var(--text-muted); padding: 2rem !important; }
+
+/* Settings Modal */
+.settings-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.settings-group label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.settings-input {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border-card);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 1rem;
+  outline: none;
+}
+
+.settings-input:focus { border-color: #38bdf8; }
+
+.settings-actions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.btn-setting-action {
+  background: rgba(30, 41, 67, 0.6);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.btn-setting-action:hover { background: rgba(51, 65, 85, 0.8); }
+.btn-danger-outline { border-color: rgba(239, 68, 68, 0.4); color: #f87171; }
+.btn-danger-outline:hover { background: rgba(239, 68, 68, 0.2); }
+
+/* Celebration Modal */
+.celebration-box {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.celebration-trophy {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+.celebration-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #38bdf8, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.celebration-streak-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fbbf24;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 1.25rem 0;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .dash-hero-grid { grid-template-columns: 1fr; }
+  .analytics-charts-grid { grid-template-columns: 1fr; }
+  .analytics-metrics-row { grid-template-columns: 1fr; }
+  .header-container { flex-wrap: wrap; }
+  .nav-text { display: none; }
+}
+  </style>
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-wrapper" id="nav-brand">
+        <!-- Inline Brand SVG Icon -->
+        <svg class="brand-icon-svg" viewBox="0 0 192 192">
+          <rect width="192" height="192" rx="40" fill="#0f172a"/>
+          <circle cx="96" cy="96" r="60" fill="none" stroke="#38bdf8" stroke-width="8" stroke-dasharray="10 6"/>
+          <path d="M 80 50 C 50 50 40 80 50 110 C 60 135 85 145 96 145 C 107 145 132 135 142 110 C 152 80 142 50 112 50" fill="none" stroke="#818cf8" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="76" cy="90" r="10" fill="#38bdf8"/>
+          <circle cx="116" cy="90" r="10" fill="#ec4899"/>
+          <line x1="76" y1="90" x2="116" y2="90" stroke="#fff" stroke-width="4"/>
+        </svg>
+        <div>
+          <span class="brand-title">NEUROFLEX</span>
+          <span class="brand-offline-tag">100% Offline</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <button class="nav-link active" id="nav-dashboard">
+          <span>🏠</span> <span class="nav-text">Dashboard</span>
+        </button>
+        <button class="nav-link" id="nav-games">
+          <span>🎮</span> <span class="nav-text">Games</span>
+        </button>
+        <button class="nav-link" id="nav-analytics">
+          <span>📊</span> <span class="nav-text">Analytics</span>
+        </button>
+        <button class="nav-link" id="nav-settings">
+          <span>⚙️</span> <span class="nav-text">Settings</span>
+        </button>
+      </nav>
+
+      <div class="header-meta">
+        <div class="meta-chip" title="Current Brain Performance Index">
+          <span>🧠 BPI</span>
+          <span class="chip-val" id="header-bpi-val">850</span>
+        </div>
+        <div class="meta-chip" title="Daily Training Streak">
+          <span>🔥</span>
+          <span class="chip-val" id="header-streak-val">0</span>
+        </div>
+        <button class="btn-icon" id="sound-toggle-btn" title="Toggle Sound">
+          🔊 <span class="nav-text">Sound</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Screen Container -->
+  <main>
+    <!-- Screen 1: Dashboard -->
+    <section class="app-screen active" id="screen-dashboard">
+      <div class="dash-hero-grid">
+        <!-- Daily Workout Card -->
+        <div class="dash-hero-card" id="daily-workout-banner">
+          <div>
+            <div class="hero-tag">
+              <span>⚡</span> Daily Cognitive Regimen
+            </div>
+            <h1 class="hero-title">Welcome back, <span id="dash-username">NeuroTrainer</span>!</h1>
+            <p class="hero-desc">
+              Sharpen all 5 core cognitive domains today. Complete today's curated 5-game workout to elevate your Brain Performance Index (BPI).
+            </p>
+            <div class="daily-progress-pills" id="daily-progress-pills"></div>
+          </div>
+          <div>
+            <button class="btn-primary" id="btn-start-workout">
+              Start Daily Workout (5 Games) →
+            </button>
+          </div>
+        </div>
+
+        <!-- Dashboard Radar Chart -->
+        <div class="dash-radar-card">
+          <div class="card-header-flex">
+            <h2 class="section-title">Cognitive Radar</h2>
+            <span class="meta-chip">Streak: <strong id="dash-streak-count" style="color:#fbbf24; margin-left:4px;">0 Days</strong></span>
+          </div>
+          <div class="radar-canvas-wrap">
+            <canvas id="radar-canvas-dash" width="300" height="260"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Cognitive Pillars -->
+      <div class="section-heading-bar">
+        <div>
+          <h2>Cognitive Pillars</h2>
+          <p>Targeted training areas based on neuroscience research.</p>
+        </div>
+      </div>
+
+      <div class="category-grid" id="dash-category-grid"></div>
+    </section>
+
+    <!-- Screen 2: Games Hub (Free Play) -->
+    <section class="app-screen" id="screen-games-hub">
+      <div class="section-heading-bar">
+        <div>
+          <h2>Cognitive Training Library</h2>
+          <p>Select any individual game to focus on specific cognitive mechanisms.</p>
+        </div>
+      </div>
+      <div class="games-list-grid" id="games-list-grid"></div>
+    </section>
+
+    <!-- Screen 3: Game Arena -->
+    <section class="app-screen" id="screen-game-arena">
+      <div class="arena-topbar">
+        <div class="arena-game-info">
+          <span class="arena-icon" id="arena-game-icon">🧠</span>
+          <div>
+            <h2 class="arena-title" id="arena-game-name">Game Title</h2>
+          </div>
+          <span class="arena-mode-badge" id="arena-mode-badge" style="display: none;">Workout Mode</span>
+        </div>
+        <button class="btn-exit-game" id="btn-exit-game">✕ Exit to Dashboard</button>
+      </div>
+
+      <div class="game-canvas-area" id="game-canvas-area"></div>
+    </section>
+  </main>
+
+  <!-- Modal 1: Game Over / Results -->
+  <div class="modal-overlay" id="modal-results">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 id="res-game-title">Game Finished!</h2>
+        <p>Performance summary and cognitive impact rating</p>
+      </div>
+
+      <div class="res-score-box">
+        <div class="res-score-lbl">Session Score</div>
+        <div class="res-score-num" id="res-score">0</div>
+        <div class="res-bpi-tag positive" id="res-bpi-diff">+12 BPI</div>
+      </div>
+
+      <div class="res-stats-grid" id="res-stats-list"></div>
+
+      <div class="res-modal-actions">
+        <button class="btn-secondary" id="btn-result-hub" style="flex:1;">Dashboard</button>
+        <button class="btn-primary" id="btn-result-next" style="flex:1.5;">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Daily Workout Complete Celebration -->
+  <div class="modal-overlay" id="modal-celebration">
+    <div class="modal-card">
+      <div class="celebration-box">
+        <div class="celebration-trophy">🏆</div>
+        <h2 class="celebration-title">Daily Workout Complete!</h2>
+        <p style="color: #94a3b8; line-height: 1.5;">
+          Outstanding effort! You've successfully trained all 5 core cognitive domains today.
+        </p>
+        <div class="celebration-streak-badge">
+          🔥 Streak: <span id="cel-streak">1 Day</span>
+        </div>
+        <div style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+          Overall BPI: <strong id="cel-overall-bpi" style="color: #38bdf8;">862</strong>
+        </div>
+        <button class="btn-primary" id="btn-celebration-close" style="width: 100%;">
+          Back to Dashboard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Analytics & BPI Profile -->
+  <div class="modal-overlay" id="modal-analytics">
+    <div class="modal-card modal-card-lg">
+      <button class="modal-close-btn modal-close">✕</button>
+      <div class="modal-header">
+        <h2>Cognitive Profile & Analytics</h2>
+        <p>Detailed performance breakdown, radar mapping, and progression history.</p>
+      </div>
+
+      <div class="analytics-metrics-row">
+        <div class="metric-box">
+          <div class="m-lbl">Current BPI</div>
+          <div class="m-val" id="an-overall-bpi">850</div>
+        </div>
+        <div class="metric-box">
+          <div class="m-lbl">Total Sessions</div>
+          <div class="m-val" id="an-total-games">0</div>
+        </div>
+        <div class="metric-box">
+          <div class="m-lbl">Best Streak</div>
+          <div class="m-val" id="an-best-streak">0 Days</div>
+        </div>
+      </div>
+
+      <div class="analytics-charts-grid">
+        <div class="chart-card-box">
+          <h3>Domain Breakdown (Radar)</h3>
+          <canvas id="radar-canvas-modal" width="360" height="240"></canvas>
+        </div>
+        <div class="chart-card-box">
+          <h3>BPI Progression Trend</h3>
+          <canvas id="trend-canvas-modal" width="360" height="240"></canvas>
+        </div>
+      </div>
+
+      <div class="history-table-box">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Game</th>
+              <th>Score</th>
+              <th>Accuracy</th>
+              <th>BPI Δ</th>
+            </tr>
+          </thead>
+          <tbody id="an-history-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Settings & Data Management -->
+  <div class="modal-overlay" id="modal-settings">
+    <div class="modal-card">
+      <button class="modal-close-btn modal-close">✕</button>
+      <div class="modal-header">
+        <h2>Trainer Settings & Data</h2>
+        <p>Manage your offline profile, audio, and data backups.</p>
+      </div>
+
+      <div class="settings-group">
+        <label for="settings-username">Trainer Username</label>
+        <input type="text" id="settings-username" class="settings-input" maxlength="24" value="NeuroTrainer">
+      </div>
+
+      <div class="settings-actions-list">
+        <button class="btn-setting-action" id="btn-export-data">
+          <span>💾 Export Data Backup (JSON)</span>
+          <span>↓</span>
+        </button>
+        <button class="btn-setting-action" id="btn-import-data">
+          <span>📂 Import Data Backup (JSON)</span>
+          <span>↑</span>
+        </button>
+        <input type="file" id="file-import-input" accept=".json" style="display: none;">
+
+        <button class="btn-setting-action btn-danger-outline" id="btn-reset-data">
+          <span>⚠️ Reset All Scores & History</span>
+          <span>✕</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       COMPLETE JAVASCRIPT ENGINE (BUNDLED INLINE)
+       ======================================================================== -->
+  <script>
+  /* --------------------------------------------------------------------------
+     1. SoundEngine (Web Audio API Procedural Synthesis)
+     -------------------------------------------------------------------------- */
+  class SoundEngine {
+    constructor() {
+      this.ctx = null;
+      this.enabled = localStorage.getItem('neuroflex_sound') !== 'false';
+    }
+
+    init() {
+      if (!this.ctx) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (AudioContext) {
+          this.ctx = new AudioContext();
+        }
+      }
+      if (this.ctx && this.ctx.state === 'suspended') {
+        this.ctx.resume();
+      }
+    }
+
+    toggleSound() {
+      this.enabled = !this.enabled;
+      localStorage.setItem('neuroflex_sound', this.enabled);
+      if (this.enabled) {
+        this.init();
+        this.playCorrect();
+      }
+      return this.enabled;
+    }
+
+    playTone(freq, type = 'sine', duration = 0.15, gainVal = 0.15, decay = true) {
+      if (!this.enabled) return;
+      this.init();
+      if (!this.ctx) return;
+
+      try {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, this.ctx.currentTime);
+
+        gain.gain.setValueAtTime(gainVal, this.ctx.currentTime);
+        if (decay) {
+          gain.gain.exponentialRampToValueAtTime(0.0001, this.ctx.currentTime + duration);
+        }
+
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+
+        osc.start();
+        osc.stop(this.ctx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    playTick() {
+      if (!this.enabled) return;
+      this.init();
+      if (!this.ctx) return;
+
+      try {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(800, this.ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(200, this.ctx.currentTime + 0.04);
+
+        gain.gain.setValueAtTime(0.12, this.ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.04);
+
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.04);
+      } catch (e) {}
+    }
+
+    playCorrect() {
+      if (!this.enabled) return;
+      const notes = [523.25, 659.25, 783.99];
+      notes.forEach((freq, idx) => {
+        setTimeout(() => this.playTone(freq, 'sine', 0.18, 0.12), idx * 45);
+      });
+    }
+
+    playWrong() {
+      if (!this.enabled) return;
+      this.init();
+      if (!this.ctx) return;
+
+      try {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(140, this.ctx.currentTime);
+        osc.frequency.linearRampToValueAtTime(100, this.ctx.currentTime + 0.2);
+
+        gain.gain.setValueAtTime(0.2, this.ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.22);
+
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.22);
+      } catch (e) {}
+    }
+
+    playStreak(combo = 1) {
+      if (!this.enabled) return;
+      const baseFreq = 659.25;
+      const pitchFactor = Math.min(combo * 0.08, 0.6);
+      const notes = [baseFreq * (1 + pitchFactor), baseFreq * 1.33 * (1 + pitchFactor)];
+
+      notes.forEach((freq, idx) => {
+        setTimeout(() => this.playTone(freq, 'triangle', 0.16, 0.14), idx * 40);
+      });
+    }
+
+    playFlip() {
+      if (!this.enabled) return;
+      this.playTone(400, 'sine', 0.05, 0.08);
+    }
+
+    playGameStart() {
+      if (!this.enabled) return;
+      const notes = [440, 554.37, 659.25, 880];
+      notes.forEach((freq, idx) => {
+        setTimeout(() => this.playTone(freq, 'sine', 0.2, 0.15), idx * 75);
+      });
+    }
+
+    playGameOver() {
+      if (!this.enabled) return;
+      const notes = [587.33, 523.25, 440, 392];
+      notes.forEach((freq, idx) => {
+        setTimeout(() => this.playTone(freq, 'sine', 0.25, 0.14), idx * 100);
+      });
+    }
+
+    playVictory() {
+      if (!this.enabled) return;
+      const fanfare = [
+        { f: 523.25, d: 0.12, t: 0 },
+        { f: 659.25, d: 0.12, t: 120 },
+        { f: 783.99, d: 0.15, t: 240 },
+        { f: 1046.5, d: 0.45, t: 380 }
+      ];
+      fanfare.forEach(item => {
+        setTimeout(() => this.playTone(item.f, 'triangle', item.d, 0.2), item.t);
+      });
+    }
+  }
+
+  const soundEngine = new SoundEngine();
+
+  /* --------------------------------------------------------------------------
+     2. StateManager & BPI Calculation Engine
+     -------------------------------------------------------------------------- */
+  const STORAGE_KEY = 'neuroflex_state_v1';
+
+  const DEFAULT_CATEGORIES = {
+    memory: { name: 'Memory', color: '#0ea5e9', bpi: 850, gamesPlayed: 0, bestScore: 0 },
+    speed: { name: 'Speed', color: '#f59e0b', bpi: 850, gamesPlayed: 0, bestScore: 0 },
+    attention: { name: 'Attention', color: '#10b981', bpi: 850, gamesPlayed: 0, bestScore: 0 },
+    flexibility: { name: 'Flexibility', color: '#ec4899', bpi: 850, gamesPlayed: 0, bestScore: 0 },
+    problemSolving: { name: 'Problem Solving', color: '#8b5cf6', bpi: 850, gamesPlayed: 0, bestScore: 0 }
+  };
+
+  const GAME_DEFINITIONS = {
+    'memory-matrix': {
+      id: 'memory-matrix',
+      name: 'Memory Matrix',
+      category: 'memory',
+      icon: '🧠',
+      summary: 'Recall dynamic tile patterns on an expanding spatial grid.',
+      instruction: 'Remember the highlighted tiles. Tap them once the grid is hidden.'
+    },
+    'speed-match': {
+      id: 'speed-match',
+      name: 'Speed Match',
+      category: 'speed',
+      icon: '⚡',
+      summary: 'Identify whether the current symbol matches the one shown right before.',
+      instruction: 'Compare with previous symbol. Press Left (NO) or Right (YES).'
+    },
+    'lost-in-migration': {
+      id: 'lost-in-migration',
+      name: 'Lost in Migration',
+      category: 'attention',
+      icon: '🎯',
+      summary: 'Flanker inhibition task: discern the flock center bird direction.',
+      instruction: 'Focus only on the CENTER bird. Use Arrow keys (Up, Down, Left, Right).'
+    },
+    'color-match': {
+      id: 'color-match',
+      name: 'Color Match',
+      category: 'flexibility',
+      icon: '🔄',
+      summary: 'Stroop conflict test: compare ink color with word meaning.',
+      instruction: 'Does the TOP ink color match the BOTTOM word meaning? Press NO or YES.'
+    },
+    'chalkboard-challenge': {
+      id: 'chalkboard-challenge',
+      name: 'Chalkboard Challenge',
+      category: 'problemSolving',
+      icon: '🔢',
+      summary: 'Rapid mathematical comparison under time pressure.',
+      instruction: 'Compare Side A with Side B. Select < (Less), = (Equal), or > (Greater).'
+    }
+  };
+
+  const DAILY_WORKOUT_GAME_IDS = [
+    'memory-matrix',
+    'speed-match',
+    'lost-in-migration',
+    'color-match',
+    'chalkboard-challenge'
+  ];
+
+  class StateManager {
+    constructor() {
+      this.state = this.loadState();
+      this.verifyStreak();
+    }
+
+    getDefaultState() {
+      const todayStr = this.getTodayDateString();
+      return {
+        profile: { username: 'NeuroTrainer', createdAt: new Date().toISOString() },
+        overallBPI: 850,
+        categories: JSON.parse(JSON.stringify(DEFAULT_CATEGORIES)),
+        totalGamesPlayed: 0,
+        streak: { current: 0, best: 0, lastActiveDate: null },
+        dailyWorkout: { date: todayStr, completedGames: [], isCompleted: false },
+        history: [],
+        bpiHistory: [{ date: todayStr, bpi: 850 }]
+      };
+    }
+
+    loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          const defaults = this.getDefaultState();
+          return {
+            ...defaults,
+            ...parsed,
+            categories: { ...defaults.categories, ...(parsed.categories || {}) },
+            dailyWorkout: { ...defaults.dailyWorkout, ...(parsed.dailyWorkout || {}) },
+            streak: { ...defaults.streak, ...(parsed.streak || {}) }
+          };
+        }
+      } catch (e) {}
+      return this.getDefaultState();
+    }
+
+    saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(this.state));
+      } catch (e) {}
+    }
+
+    getTodayDateString() {
+      return new Date().toISOString().split('T')[0];
+    }
+
+    verifyStreak() {
+      const today = this.getTodayDateString();
+      if (!this.state.dailyWorkout || this.state.dailyWorkout.date !== today) {
+        this.state.dailyWorkout = { date: today, completedGames: [], isCompleted: false };
+      }
+
+      const lastActive = this.state.streak.lastActiveDate;
+      if (lastActive) {
+        const todayDate = new Date(today);
+        const lastDate = new Date(lastActive);
+        const diffDays = Math.floor((todayDate - lastDate) / (1000 * 60 * 60 * 24));
+        if (diffDays > 1) {
+          this.state.streak.current = 0;
+        }
+      }
+      this.saveState();
+    }
+
+    calculateGameBPI(gameId, score, accuracy = 100) {
+      let performanceIndex = 850;
+      switch (gameId) {
+        case 'memory-matrix':
+          performanceIndex = 650 + Math.min(score * 0.065, 800) + (accuracy * 1.5);
+          break;
+        case 'speed-match':
+          performanceIndex = 600 + Math.min(score * 0.075, 850) + (accuracy * 1.2);
+          break;
+        case 'lost-in-migration':
+          performanceIndex = 600 + Math.min(score * 0.07, 850) + (accuracy * 1.2);
+          break;
+        case 'color-match':
+          performanceIndex = 650 + Math.min(score * 0.08, 800) + (accuracy * 1.5);
+          break;
+        case 'chalkboard-challenge':
+          performanceIndex = 600 + Math.min(score * 0.07, 850) + (accuracy * 1.2);
+          break;
+        default:
+          performanceIndex = 850;
+      }
+      return Math.max(500, Math.min(1600, Math.round(performanceIndex)));
+    }
+
+    recordGameResult(gameId, score, accuracy = 100, isWorkoutMode = false) {
+      const gameDef = GAME_DEFINITIONS[gameId];
+      if (!gameDef) return;
+
+      const catKey = gameDef.category;
+      const cat = this.state.categories[catKey];
+      const estimatedPerformance = this.calculateGameBPI(gameId, score, accuracy);
+
+      const previousCatBPI = cat.bpi || 850;
+      const weight = cat.gamesPlayed === 0 ? 0.6 : 0.25;
+      const newCatBPI = Math.round(previousCatBPI * (1 - weight) + estimatedPerformance * weight);
+      const bpiDiff = newCatBPI - previousCatBPI;
+
+      cat.bpi = newCatBPI;
+      cat.gamesPlayed += 1;
+      if (score > (cat.bestScore || 0)) {
+        cat.bestScore = score;
+      }
+
+      this.state.totalGamesPlayed += 1;
+
+      const catKeys = Object.keys(this.state.categories);
+      const totalCatBPI = catKeys.reduce((acc, k) => acc + (this.state.categories[k].bpi || 850), 0);
+      this.state.overallBPI = Math.round(totalCatBPI / catKeys.length);
+
+      const todayStr = this.getTodayDateString();
+      const lastHistory = this.state.bpiHistory[this.state.bpiHistory.length - 1];
+      if (lastHistory && lastHistory.date === todayStr) {
+        lastHistory.bpi = this.state.overallBPI;
+      } else {
+        this.state.bpiHistory.push({ date: todayStr, bpi: this.state.overallBPI });
+        if (this.state.bpiHistory.length > 30) this.state.bpiHistory.shift();
+      }
+
+      let dailyCompletedNow = false;
+      if (isWorkoutMode) {
+        if (!this.state.dailyWorkout.completedGames.includes(gameId)) {
+          this.state.dailyWorkout.completedGames.push(gameId);
+        }
+
+        const allDone = DAILY_WORKOUT_GAME_IDS.every(id => this.state.dailyWorkout.completedGames.includes(id));
+        if (allDone && !this.state.dailyWorkout.isCompleted) {
+          this.state.dailyWorkout.isCompleted = true;
+          dailyCompletedNow = true;
+
+          const lastActive = this.state.streak.lastActiveDate;
+          if (lastActive !== todayStr) {
+            this.state.streak.current += 1;
+            if (this.state.streak.current > this.state.streak.best) {
+              this.state.streak.best = this.state.streak.current;
+            }
+            this.state.streak.lastActiveDate = todayStr;
+          }
+        }
+      }
+
+      this.state.history.unshift({
+        id: Date.now().toString(36) + Math.random().toString(36).substr(2, 4),
+        timestamp: new Date().toISOString(),
+        gameId,
+        gameName: gameDef.name,
+        category: catKey,
+        score,
+        accuracy,
+        bpiDiff,
+        newBpi: this.state.overallBPI
+      });
+
+      if (this.state.history.length > 100) this.state.history.pop();
+      this.saveState();
+
+      return {
+        score,
+        accuracy,
+        bpiDiff,
+        newCatBPI,
+        overallBPI: this.state.overallBPI,
+        dailyCompletedNow,
+        isWorkoutMode
+      };
+    }
+
+    exportData() {
+      return JSON.stringify(this.state, null, 2);
+    }
+
+    importData(jsonString) {
+      try {
+        const data = JSON.parse(jsonString);
+        if (data && data.categories && data.overallBPI !== undefined) {
+          this.state = data;
+          this.saveState();
+          return { success: true };
+        }
+        return { success: false, error: 'Invalid data format.' };
+      } catch (e) {
+        return { success: false, error: e.message };
+      }
+    }
+
+    resetAllData() {
+      this.state = this.getDefaultState();
+      this.saveState();
+    }
+  }
+
+  const stateManager = new StateManager();
+
+  /* --------------------------------------------------------------------------
+     3. ChartEngine (Pure Canvas High-DPI Radar & Line Graphs)
+     -------------------------------------------------------------------------- */
+  class ChartEngine {
+    setupCanvasDPI(canvas) {
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      const width = rect.width || canvas.width || 320;
+      const height = rect.height || canvas.height || 280;
+
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+
+      const ctx = canvas.getContext('2d');
+      ctx.resetTransform();
+      ctx.scale(dpr, dpr);
+      return { ctx, width, height };
+    }
+
+    renderRadarChart(canvasId, categories) {
+      const canvas = document.getElementById(canvasId);
+      if (!canvas) return;
+
+      const { ctx, width, height } = this.setupCanvasDPI(canvas);
+      ctx.clearRect(0, 0, width, height);
+
+      const keys = ['memory', 'speed', 'attention', 'flexibility', 'problemSolving'];
+      const totalAxes = keys.length;
+      const centerX = width / 2;
+      const centerY = height / 2;
+      const radius = Math.min(centerX, centerY) - 40;
+
+      const minVal = 500;
+      const maxVal = 1500;
+
+      const levels = 4;
+      for (let l = 1; l <= levels; l++) {
+        const levelRadius = (radius / levels) * l;
+        ctx.beginPath();
+        for (let i = 0; i < totalAxes; i++) {
+          const angle = (Math.PI * 2 / totalAxes) * i - Math.PI / 2;
+          const x = centerX + Math.cos(angle) * levelRadius;
+          const y = centerY + Math.sin(angle) * levelRadius;
+          if (i === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.strokeStyle = 'rgba(148, 163, 184, 0.18)';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        if (l === levels) {
+          ctx.fillStyle = 'rgba(148, 163, 184, 0.4)';
+          ctx.font = '10px -apple-system, BlinkMacSystemFont, sans-serif';
+          ctx.fillText('1500', centerX + 4, centerY - levelRadius + 12);
+        }
+      }
+
+      keys.forEach((key, i) => {
+        const angle = (Math.PI * 2 / totalAxes) * i - Math.PI / 2;
+        const xEnd = centerX + Math.cos(angle) * radius;
+        const yEnd = centerY + Math.sin(angle) * radius;
+
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.lineTo(xEnd, yEnd);
+        ctx.strokeStyle = 'rgba(148, 163, 184, 0.22)';
+        ctx.stroke();
+
+        const cat = categories[key] || { name: key, bpi: 850, color: '#38bdf8' };
+        const labelRadius = radius + 22;
+        const labelX = centerX + Math.cos(angle) * labelRadius;
+        const labelY = centerY + Math.sin(angle) * labelRadius;
+
+        ctx.fillStyle = cat.color;
+        ctx.font = 'bold 11px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(cat.name, labelX, labelY - 7);
+
+        ctx.fillStyle = '#f8fafc';
+        ctx.font = '11px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillText(`${cat.bpi} BPI`, labelX, labelY + 8);
+      });
+
+      ctx.beginPath();
+      keys.forEach((key, i) => {
+        const cat = categories[key] || { bpi: 850 };
+        const clampedVal = Math.max(minVal, Math.min(maxVal, cat.bpi));
+        const ratio = (clampedVal - minVal) / (maxVal - minVal);
+        const valRadius = Math.max(15, ratio * radius);
+
+        const angle = (Math.PI * 2 / totalAxes) * i - Math.PI / 2;
+        const x = centerX + Math.cos(angle) * valRadius;
+        const y = centerY + Math.sin(angle) * valRadius;
+
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.closePath();
+
+      const gradient = ctx.createRadialGradient(centerX, centerY, 10, centerX, centerY, radius);
+      gradient.addColorStop(0, 'rgba(14, 165, 233, 0.45)');
+      gradient.addColorStop(1, 'rgba(139, 92, 246, 0.25)');
+      ctx.fillStyle = gradient;
+      ctx.fill();
+
+      ctx.strokeStyle = '#38bdf8';
+      ctx.lineWidth = 2.5;
+      ctx.stroke();
+
+      keys.forEach((key, i) => {
+        const cat = categories[key] || { bpi: 850, color: '#38bdf8' };
+        const clampedVal = Math.max(minVal, Math.min(maxVal, cat.bpi));
+        const ratio = (clampedVal - minVal) / (maxVal - minVal);
+        const valRadius = Math.max(15, ratio * radius);
+
+        const angle = (Math.PI * 2 / totalAxes) * i - Math.PI / 2;
+        const x = centerX + Math.cos(angle) * valRadius;
+        const y = centerY + Math.sin(angle) * valRadius;
+
+        ctx.beginPath();
+        ctx.arc(x, y, 4.5, 0, Math.PI * 2);
+        ctx.fillStyle = '#ffffff';
+        ctx.fill();
+        ctx.strokeStyle = cat.color;
+        ctx.lineWidth = 2.5;
+        ctx.stroke();
+      });
+    }
+
+    renderBpiTrend(canvasId, bpiHistory) {
+      const canvas = document.getElementById(canvasId);
+      if (!canvas) return;
+
+      const { ctx, width, height } = this.setupCanvasDPI(canvas);
+      ctx.clearRect(0, 0, width, height);
+
+      if (!bpiHistory || bpiHistory.length === 0) {
+        bpiHistory = [{ date: 'Today', bpi: 850 }];
+      }
+
+      const padLeft = 45;
+      const padRight = 20;
+      const padTop = 20;
+      const padBottom = 30;
+
+      const plotW = width - padLeft - padRight;
+      const plotH = height - padTop - padBottom;
+
+      const values = bpiHistory.map(h => h.bpi);
+      let minVal = Math.min(...values);
+      let maxVal = Math.max(...values);
+
+      minVal = Math.floor(Math.max(500, minVal - 50) / 50) * 50;
+      maxVal = Math.ceil(Math.min(1600, maxVal + 50) / 50) * 50;
+      if (maxVal === minVal) maxVal += 100;
+
+      const yTicks = 4;
+      ctx.fillStyle = 'rgba(148, 163, 184, 0.6)';
+      ctx.font = '10px -apple-system, BlinkMacSystemFont, sans-serif';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+
+      for (let i = 0; i <= yTicks; i++) {
+        const yRatio = i / yTicks;
+        const y = padTop + plotH - (yRatio * plotH);
+        const val = Math.round(minVal + yRatio * (maxVal - minVal));
+
+        ctx.beginPath();
+        ctx.moveTo(padLeft, y);
+        ctx.lineTo(width - padRight, y);
+        ctx.strokeStyle = 'rgba(148, 163, 184, 0.12)';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        ctx.fillText(`${val}`, padLeft - 8, y);
+      }
+
+      const points = bpiHistory.map((item, idx) => {
+        const x = bpiHistory.length === 1 
+          ? padLeft + plotW / 2 
+          : padLeft + (idx / (bpiHistory.length - 1)) * plotW;
+        const valRatio = (item.bpi - minVal) / (maxVal - minVal);
+        const y = padTop + plotH - (valRatio * plotH);
+        return { x, y, item };
+      });
+
+      ctx.beginPath();
+      ctx.moveTo(points[0].x, padTop + plotH);
+      points.forEach((pt, i) => {
+        if (i === 0) ctx.lineTo(pt.x, pt.y);
+        else {
+          const prev = points[i - 1];
+          const cx = (prev.x + pt.x) / 2;
+          ctx.bezierCurveTo(cx, prev.y, cx, pt.y, pt.x, pt.y);
+        }
+      });
+      ctx.lineTo(points[points.length - 1].x, padTop + plotH);
+      ctx.closePath();
+
+      const areaGrad = ctx.createLinearGradient(0, padTop, 0, padTop + plotH);
+      areaGrad.addColorStop(0, 'rgba(14, 165, 233, 0.35)');
+      areaGrad.addColorStop(1, 'rgba(14, 165, 233, 0.0)');
+      ctx.fillStyle = areaGrad;
+      ctx.fill();
+
+      ctx.beginPath();
+      points.forEach((pt, i) => {
+        if (i === 0) ctx.moveTo(pt.x, pt.y);
+        else {
+          const prev = points[i - 1];
+          const cx = (prev.x + pt.x) / 2;
+          ctx.bezierCurveTo(cx, prev.y, cx, pt.y, pt.x, pt.y);
+        }
+      });
+      ctx.strokeStyle = '#0ea5e9';
+      ctx.lineWidth = 3;
+      ctx.stroke();
+
+      points.forEach((pt, idx) => {
+        ctx.beginPath();
+        ctx.arc(pt.x, pt.y, 4, 0, Math.PI * 2);
+        ctx.fillStyle = '#38bdf8';
+        ctx.fill();
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        if (idx === 0 || idx === points.length - 1 || idx === Math.floor(points.length / 2)) {
+          ctx.fillStyle = 'rgba(148, 163, 184, 0.7)';
+          ctx.font = '10px -apple-system, BlinkMacSystemFont, sans-serif';
+          ctx.textAlign = 'center';
+          const dateShort = pt.item.date ? pt.item.date.slice(5) : '';
+          ctx.fillText(dateShort, pt.x, height - 10);
+        }
+      });
+    }
+  }
+
+  const chartEngine = new ChartEngine();
+
+  /* --------------------------------------------------------------------------
+     4. Game 1: Memory Matrix (Spatial Working Memory)
+     -------------------------------------------------------------------------- */
+  class MemoryMatrixGame {
+    constructor(containerId, onGameOver) {
+      this.container = document.getElementById(containerId);
+      this.onGameOver = onGameOver;
+      this.isActive = false;
+
+      this.levels = [
+        [3, 3], [3, 4], [4, 4], [4, 5], [4, 6],
+        [5, 6], [5, 7], [5, 8], [6, 8], [6, 9], [6, 10]
+      ];
+
+      this.currentLevelIdx = 0;
+      this.strikes = 0;
+      this.maxStrikes = 3;
+      this.score = 0;
+      this.totalCorrectTiles = 0;
+      this.totalAttempts = 0;
+      this.streak = 0;
+      this.round = 1;
+      this.maxRounds = 15;
+
+      this.gridDim = 3;
+      this.targetCount = 3;
+      this.targetIndices = new Set();
+      this.selectedIndices = new Set();
+      this.isInputLocked = true;
+      this.roundStartTime = 0;
+    }
+
+    start() {
+      this.isActive = true;
+      this.currentLevelIdx = 0;
+      this.strikes = 0;
+      this.score = 0;
+      this.totalCorrectTiles = 0;
+      this.totalAttempts = 0;
+      this.streak = 0;
+      this.round = 1;
+
+      soundEngine.playGameStart();
+      this.renderShell();
+      this.startRound();
+    }
+
+    stop() {
+      this.isActive = false;
+      this.isInputLocked = true;
+      if (this.memorizeTimeout) clearTimeout(this.memorizeTimeout);
+      if (this.nextRoundTimeout) clearTimeout(this.nextRoundTimeout);
+    }
+
+    renderShell() {
+      this.container.innerHTML = `
+        <div class="game-hud">
+          <div class="hud-item">
+            <span class="hud-label">Score</span>
+            <span class="hud-val hud-accent" id="mm-score">0</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Round</span>
+            <span class="hud-val" id="mm-round">${this.round}/${this.maxRounds}</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Strikes</span>
+            <div class="strikes-container" id="mm-strikes">
+              <span class="strike-dot" id="mm-s1"></span>
+              <span class="strike-dot" id="mm-s2"></span>
+              <span class="strike-dot" id="mm-s3"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="matrix-stage">
+          <div class="matrix-status-msg" id="mm-status">Memorize the pattern...</div>
+          <div class="matrix-board-wrapper">
+            <div class="matrix-grid" id="mm-grid"></div>
+          </div>
+        </div>
+      `;
+    }
+
+    updateHUD() {
+      const scoreEl = document.getElementById('mm-score');
+      if (scoreEl) scoreEl.textContent = this.score.toLocaleString();
+
+      const roundEl = document.getElementById('mm-round');
+      if (roundEl) roundEl.textContent = `${this.round}/${this.maxRounds}`;
+
+      for (let i = 1; i <= 3; i++) {
+        const dot = document.getElementById(`mm-s${i}`);
+        if (dot) dot.classList.toggle('active', i <= this.strikes);
+      }
+    }
+
+    startRound() {
+      if (!this.isActive) return;
+
+      if (this.round > this.maxRounds || this.strikes >= this.maxStrikes) {
+        this.finishGame();
+        return;
+      }
+
+      const config = this.levels[Math.min(this.currentLevelIdx, this.levels.length - 1)];
+      this.gridDim = config[0];
+      this.targetCount = config[1];
+
+      this.targetIndices.clear();
+      this.selectedIndices.clear();
+      this.isInputLocked = true;
+
+      const totalTiles = this.gridDim * this.gridDim;
+      while (this.targetIndices.size < this.targetCount) {
+        this.targetIndices.add(Math.floor(Math.random() * totalTiles));
+      }
+
+      const statusEl = document.getElementById('mm-status');
+      if (statusEl) {
+        statusEl.textContent = `Memorize ${this.targetCount} tiles!`;
+        statusEl.className = 'matrix-status-msg memorize';
+      }
+
+      this.renderGrid(true);
+      soundEngine.playFlip();
+
+      this.memorizeTimeout = setTimeout(() => {
+        if (!this.isActive) return;
+        this.renderGrid(false);
+        this.isInputLocked = false;
+        this.roundStartTime = Date.now();
+
+        if (statusEl) {
+          statusEl.textContent = 'Recall the tiles now!';
+          statusEl.className = 'matrix-status-msg recall';
+        }
+      }, 1250);
+    }
+
+    renderGrid(showTargets) {
+      const gridEl = document.getElementById('mm-grid');
+      if (!gridEl) return;
+
+      gridEl.innerHTML = '';
+      gridEl.style.gridTemplateColumns = `repeat(${this.gridDim}, 1fr)`;
+
+      const totalTiles = this.gridDim * this.gridDim;
+      for (let i = 0; i < totalTiles; i++) {
+        const tile = document.createElement('button');
+        tile.className = 'matrix-tile';
+        tile.dataset.index = i;
+
+        if (showTargets && this.targetIndices.has(i)) {
+          tile.classList.add('highlighted');
+        }
+
+        tile.addEventListener('click', () => this.handleTileClick(i, tile));
+        gridEl.appendChild(tile);
+      }
+    }
+
+    handleTileClick(index, tileEl) {
+      if (this.isInputLocked || !this.isActive) return;
+      if (this.selectedIndices.has(index)) return;
+
+      this.selectedIndices.add(index);
+      this.totalAttempts += 1;
+
+      if (this.targetIndices.has(index)) {
+        this.totalCorrectTiles += 1;
+        tileEl.classList.add('correct');
+        soundEngine.playCorrect();
+
+        let foundAll = true;
+        for (const t of this.targetIndices) {
+          if (!this.selectedIndices.has(t)) {
+            foundAll = false;
+            break;
+          }
+        }
+
+        if (foundAll) this.handleRoundSuccess();
+      } else {
+        tileEl.classList.add('wrong');
+        soundEngine.playWrong();
+        this.handleRoundFailure();
+      }
+    }
+
+    handleRoundSuccess() {
+      this.isInputLocked = true;
+      this.streak += 1;
+
+      const responseTime = Math.max(0.3, (Date.now() - this.roundStartTime) / 1000);
+      const speedBonus = Math.max(0, Math.round((5 - responseTime) * 80));
+      const baseRoundScore = (this.targetCount * 250) + (this.gridDim * 150);
+      const roundScore = Math.round((baseRoundScore + speedBonus) * (1 + (this.streak - 1) * 0.2));
+
+      this.score += roundScore;
+      this.updateHUD();
+      soundEngine.playStreak(this.streak);
+
+      const statusEl = document.getElementById('mm-status');
+      if (statusEl) {
+        statusEl.textContent = `Excellent! +${roundScore.toLocaleString()} pts`;
+        statusEl.className = 'matrix-status-msg success';
+      }
+
+      if (this.currentLevelIdx < this.levels.length - 1) {
+        this.currentLevelIdx += 1;
+      }
+
+      this.round += 1;
+      this.nextRoundTimeout = setTimeout(() => this.startRound(), 900);
+    }
+
+    handleRoundFailure() {
+      this.isInputLocked = true;
+      this.strikes += 1;
+      this.streak = 0;
+      this.updateHUD();
+
+      const gridEl = document.getElementById('mm-grid');
+      if (gridEl) {
+        const tiles = gridEl.querySelectorAll('.matrix-tile');
+        tiles.forEach((t) => {
+          const idx = parseInt(t.dataset.index, 10);
+          if (this.targetIndices.has(idx) && !this.selectedIndices.has(idx)) {
+            t.classList.add('missed');
+          }
+        });
+      }
+
+      const statusEl = document.getElementById('mm-status');
+      if (statusEl) {
+        statusEl.textContent = this.strikes >= this.maxStrikes ? '3 Strikes! Game Over' : 'Missed! Pattern revealed.';
+        statusEl.className = 'matrix-status-msg fail';
+      }
+
+      if (this.currentLevelIdx > 0) {
+        this.currentLevelIdx -= 1;
+      }
+
+      this.round += 1;
+      this.nextRoundTimeout = setTimeout(() => {
+        if (this.strikes >= this.maxStrikes) this.finishGame();
+        else this.startRound();
+      }, 1400);
+    }
+
+    finishGame() {
+      this.stop();
+      const accuracy = this.totalAttempts > 0 
+        ? Math.round((this.totalCorrectTiles / this.totalAttempts) * 100) 
+        : 0;
+
+      soundEngine.playGameOver();
+      if (this.onGameOver) {
+        this.onGameOver({
+          gameId: 'memory-matrix',
+          score: this.score,
+          accuracy,
+          stats: [
+            { label: 'Highest Level', value: `Level ${this.currentLevelIdx + 1}` },
+            { label: 'Total Correct', value: `${this.totalCorrectTiles} tiles` },
+            { label: 'Accuracy', value: `${accuracy}%` }
+          ]
+        });
+      }
+    }
+  }
+
+  /* --------------------------------------------------------------------------
+     5. Game 2: Speed Match (1-Back Working Memory & Processing Speed)
+     -------------------------------------------------------------------------- */
+  class SpeedMatchGame {
+    constructor(containerId, onGameOver) {
+      this.container = document.getElementById(containerId);
+      this.onGameOver = onGameOver;
+      this.isActive = false;
+
+      this.shapes = ['circle', 'square', 'triangle', 'diamond', 'star', 'pentagon'];
+      this.colors = ['#0ea5e9', '#f59e0b', '#10b981', '#ec4899', '#8b5cf6', '#3b82f6'];
+
+      this.duration = 45;
+      this.timeLeft = this.duration;
+      this.score = 0;
+      this.streak = 0;
+      this.maxStreak = 0;
+      this.correctCount = 0;
+      this.wrongCount = 0;
+      this.reactionTimes = [];
+
+      this.prevSymbol = null;
+      this.currentSymbol = null;
+      this.cardStartTime = 0;
+      this.timerInterval = null;
+      this.keyListener = null;
+    }
+
+    start() {
+      this.isActive = true;
+      this.timeLeft = this.duration;
+      this.score = 0;
+      this.streak = 0;
+      this.maxStreak = 0;
+      this.correctCount = 0;
+      this.wrongCount = 0;
+      this.reactionTimes = [];
+      this.prevSymbol = null;
+      this.currentSymbol = null;
+
+      soundEngine.playGameStart();
+      this.renderShell();
+      this.bindControls();
+      this.startTimer();
+      this.nextCard();
+    }
+
+    stop() {
+      this.isActive = false;
+      if (this.timerInterval) clearInterval(this.timerInterval);
+      if (this.keyListener) {
+        window.removeEventListener('keydown', this.keyListener);
+        this.keyListener = null;
+      }
+    }
+
+    renderShell() {
+      this.container.innerHTML = `
+        <div class="game-hud">
+          <div class="hud-item">
+            <span class="hud-label">Score</span>
+            <span class="hud-val hud-accent" id="sm-score">0</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Time Left</span>
+            <span class="hud-val" id="sm-timer">${this.timeLeft}s</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Multiplier</span>
+            <span class="hud-val hud-bonus" id="sm-mult">1.0x</span>
+          </div>
+        </div>
+
+        <div class="speed-stage">
+          <div class="speed-question">Does this shape match the previous one?</div>
+          <div class="speed-card-holder">
+            <div class="speed-card" id="sm-card"></div>
+          </div>
+          <div class="speed-controls">
+            <button class="btn-speed btn-no" id="sm-btn-no">
+              <span class="key-hint">← Left</span>
+              <strong>NO</strong>
+            </button>
+            <button class="btn-speed btn-yes" id="sm-btn-yes">
+              <span class="key-hint">Right →</span>
+              <strong>YES</strong>
+            </button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('sm-btn-no').addEventListener('click', () => this.handleAnswer(false));
+      document.getElementById('sm-btn-yes').addEventListener('click', () => this.handleAnswer(true));
+    }
+
+    bindControls() {
+      this.keyListener = (e) => {
+        if (!this.isActive) return;
+        if (e.key === 'ArrowLeft' || e.key.toLowerCase() === 'a') {
+          e.preventDefault();
+          this.handleAnswer(false);
+        } else if (e.key === 'ArrowRight' || e.key.toLowerCase() === 'd') {
+          e.preventDefault();
+          this.handleAnswer(true);
+        }
+      };
+      window.addEventListener('keydown', this.keyListener);
+    }
+
+    startTimer() {
+      const timerEl = document.getElementById('sm-timer');
+      this.timerInterval = setInterval(() => {
+        if (!this.isActive) return;
+        this.timeLeft -= 1;
+        if (timerEl) {
+          timerEl.textContent = `${this.timeLeft}s`;
+          if (this.timeLeft <= 5) {
+            timerEl.classList.add('pulse-danger');
+            soundEngine.playTick();
+          }
+        }
+        if (this.timeLeft <= 0) this.finishGame();
+      }, 1000);
+    }
+
+    generateRandomSymbol() {
+      const shape = this.shapes[Math.floor(Math.random() * this.shapes.length)];
+      const color = this.colors[Math.floor(Math.random() * this.colors.length)];
+      return { shape, color };
+    }
+
+    nextCard() {
+      this.prevSymbol = this.currentSymbol;
+
+      if (this.prevSymbol && Math.random() < 0.45) {
+        this.currentSymbol = { ...this.prevSymbol };
+      } else {
+        let candidate;
+        do {
+          candidate = this.generateRandomSymbol();
+        } while (this.prevSymbol && candidate.shape === this.prevSymbol.shape && candidate.color === this.prevSymbol.color);
+        this.currentSymbol = candidate;
+      }
+
+      this.renderCardSymbol(this.currentSymbol);
+      this.cardStartTime = Date.now();
+    }
+
+    renderCardSymbol(symbol) {
+      const cardEl = document.getElementById('sm-card');
+      if (!cardEl) return;
+
+      let svgPath = '';
+      const color = symbol.color;
+
+      switch (symbol.shape) {
+        case 'circle': svgPath = `<circle cx="80" cy="80" r="55" fill="${color}" />`; break;
+        case 'square': svgPath = `<rect x="25" y="25" width="110" height="110" rx="14" fill="${color}" />`; break;
+        case 'triangle': svgPath = `<polygon points="80,20 140,135 20,135" fill="${color}" />`; break;
+        case 'diamond': svgPath = `<polygon points="80,18 142,80 80,142 18,80" fill="${color}" />`; break;
+        case 'star': svgPath = `<polygon points="80,15 99,62 150,62 108,93 124,142 80,111 36,142 52,93 10,62 61,62" fill="${color}" />`; break;
+        case 'pentagon': svgPath = `<polygon points="80,20 140,64 117,135 43,135 20,64" fill="${color}" />`; break;
+      }
+
+      cardEl.innerHTML = `<svg viewBox="0 0 160 160" width="130" height="130">${svgPath}</svg>`;
+      cardEl.classList.remove('pop');
+      void cardEl.offsetWidth;
+      cardEl.classList.add('pop');
+    }
+
+    handleAnswer(userSaysMatch) {
+      if (!this.isActive) return;
+
+      if (!this.prevSymbol) {
+        this.nextCard();
+        return;
+      }
+
+      const actualMatch = (
+        this.prevSymbol.shape === this.currentSymbol.shape &&
+        this.prevSymbol.color === this.currentSymbol.color
+      );
+
+      const isCorrect = (userSaysMatch === actualMatch);
+      const rt = Date.now() - this.cardStartTime;
+      this.reactionTimes.push(rt);
+
+      const cardEl = document.getElementById('sm-card');
+
+      if (isCorrect) {
+        this.correctCount += 1;
+        this.streak += 1;
+        if (this.streak > this.maxStreak) this.maxStreak = this.streak;
+
+        const multiplier = 1 + Math.min(Math.floor(this.streak / 3) * 0.25, 2.0);
+        const speedPoints = Math.max(50, 400 - Math.round(rt * 0.3));
+        const roundScore = Math.round(speedPoints * multiplier);
+        this.score += roundScore;
+
+        soundEngine.playCorrect();
+        if (this.streak % 4 === 0) soundEngine.playStreak(this.streak);
+
+        if (cardEl) {
+          cardEl.classList.add('correct-glow');
+          setTimeout(() => cardEl.classList.remove('correct-glow'), 200);
+        }
+      } else {
+        this.wrongCount += 1;
+        this.streak = 0;
+        soundEngine.playWrong();
+
+        if (cardEl) {
+          cardEl.classList.add('wrong-shake');
+          setTimeout(() => cardEl.classList.remove('wrong-shake'), 250);
+        }
+      }
+
+      this.updateHUD();
+      this.nextCard();
+    }
+
+    updateHUD() {
+      const scoreEl = document.getElementById('sm-score');
+      if (scoreEl) scoreEl.textContent = this.score.toLocaleString();
+
+      const multEl = document.getElementById('sm-mult');
+      if (multEl) {
+        const mult = 1 + Math.min(Math.floor(this.streak / 3) * 0.25, 2.0);
+        multEl.textContent = `${mult.toFixed(1)}x`;
+      }
+    }
+
+    finishGame() {
+      this.stop();
+      const total = this.correctCount + this.wrongCount;
+      const accuracy = total > 0 ? Math.round((this.correctCount / total) * 100) : 0;
+      const avgRt = this.reactionTimes.length > 0 
+        ? Math.round(this.reactionTimes.reduce((a, b) => a + b, 0) / this.reactionTimes.length) 
+        : 0;
+
+      soundEngine.playGameOver();
+      if (this.onGameOver) {
+        this.onGameOver({
+          gameId: 'speed-match',
+          score: this.score,
+          accuracy,
+          stats: [
+            { label: 'Max Streak', value: `${this.maxStreak} in a row` },
+            { label: 'Avg Speed', value: `${avgRt} ms` },
+            { label: 'Accuracy', value: `${accuracy}% (${this.correctCount}/${total})` }
+          ]
+        });
+      }
+    }
+  }
+
+  /* --------------------------------------------------------------------------
+     6. Game 3: Lost in Migration (Flanker Attention Task)
+     -------------------------------------------------------------------------- */
+  class LostMigrationGame {
+    constructor(containerId, onGameOver) {
+      this.container = document.getElementById(containerId);
+      this.onGameOver = onGameOver;
+      this.isActive = false;
+
+      this.directions = ['up', 'down', 'left', 'right'];
+      this.formations = ['horizontal', 'v-shape', 'vertical'];
+
+      this.duration = 45;
+      this.timeLeft = this.duration;
+      this.score = 0;
+      this.streak = 0;
+      this.maxStreak = 0;
+      this.correctCount = 0;
+      this.wrongCount = 0;
+      this.reactionTimes = [];
+
+      this.targetDirection = null;
+      this.flankerDirection = null;
+      this.currentFormation = 'horizontal';
+      this.stimulusStartTime = 0;
+      this.timerInterval = null;
+      this.keyListener = null;
+    }
+
+    start() {
+      this.isActive = true;
+      this.timeLeft = this.duration;
+      this.score = 0;
+      this.streak = 0;
+      this.maxStreak = 0;
+      this.correctCount = 0;
+      this.wrongCount = 0;
+      this.reactionTimes = [];
+
+      soundEngine.playGameStart();
+      this.renderShell();
+      this.bindControls();
+      this.startTimer();
+      this.nextFlock();
+    }
+
+    stop() {
+      this.isActive = false;
+      if (this.timerInterval) clearInterval(this.timerInterval);
+      if (this.keyListener) {
+        window.removeEventListener('keydown', this.keyListener);
+        this.keyListener = null;
+      }
+    }
+
+    renderShell() {
+      this.container.innerHTML = `
+        <div class="game-hud">
+          <div class="hud-item">
+            <span class="hud-label">Score</span>
+            <span class="hud-val hud-accent" id="lim-score">0</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Time Left</span>
+            <span class="hud-val" id="lim-timer">${this.timeLeft}s</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Streak</span>
+            <span class="hud-val hud-bonus" id="lim-streak">0</span>
+          </div>
+        </div>
+
+        <div class="flock-stage">
+          <div class="flock-instruction">Fly with the <strong>CENTER BIRD</strong>!</div>
+          <div class="sky-container" id="lim-sky">
+            <div class="flock-formation" id="lim-flock"></div>
+          </div>
+          <div class="dpad-controls">
+            <div class="dpad-row">
+              <button class="btn-dpad" id="lim-btn-up" data-dir="up">▲<span class="key-sub">Up</span></button>
+            </div>
+            <div class="dpad-row dpad-mid">
+              <button class="btn-dpad" id="lim-btn-left" data-dir="left">◀<span class="key-sub">Left</span></button>
+              <div class="dpad-center-guide">CENTER</div>
+              <button class="btn-dpad" id="lim-btn-right" data-dir="right">▶<span class="key-sub">Right</span></button>
+            </div>
+            <div class="dpad-row">
+              <button class="btn-dpad" id="lim-btn-down" data-dir="down">▼<span class="key-sub">Down</span></button>
+            </div>
+          </div>
+        </div>
+      `;
+
+      ['up', 'down', 'left', 'right'].forEach(dir => {
+        const btn = document.getElementById(`lim-btn-${dir}`);
+        if (btn) btn.addEventListener('click', () => this.handleDirectionInput(dir));
+      });
+    }
+
+    bindControls() {
+      this.keyListener = (e) => {
+        if (!this.isActive) return;
+        const key = e.key;
+        let dir = null;
+        if (key === 'ArrowUp' || key.toLowerCase() === 'w') dir = 'up';
+        else if (key === 'ArrowDown' || key.toLowerCase() === 's') dir = 'down';
+        else if (key === 'ArrowLeft' || key.toLowerCase() === 'a') dir = 'left';
+        else if (key === 'ArrowRight' || key.toLowerCase() === 'd') dir = 'right';
+
+        if (dir) {
+          e.preventDefault();
+          this.handleDirectionInput(dir);
+        }
+      };
+      window.addEventListener('keydown', this.keyListener);
+    }
+
+    startTimer() {
+      const timerEl = document.getElementById('lim-timer');
+      this.timerInterval = setInterval(() => {
+        if (!this.isActive) return;
+        this.timeLeft -= 1;
+        if (timerEl) {
+          timerEl.textContent = `${this.timeLeft}s`;
+          if (this.timeLeft <= 5) {
+            timerEl.classList.add('pulse-danger');
+            soundEngine.playTick();
+          }
+        }
+        if (this.timeLeft <= 0) this.finishGame();
+      }, 1000);
+    }
+
+    getBirdSvg(direction, isCenter = false) {
+      let rot = 0;
+      if (direction === 'right') rot = 90;
+      else if (direction === 'down') rot = 180;
+      else if (direction === 'left') rot = 270;
+
+      const fill = isCenter ? '#38bdf8' : '#64748b';
+      const stroke = isCenter ? '#bae6fd' : '#475569';
+
+      return `
+        <div class="bird-wrap ${isCenter ? 'center-bird' : 'flanker-bird'}">
+          <svg viewBox="0 0 100 100" width="54" height="54" style="transform: rotate(${rot}deg);">
+            <path d="M 50,10 L 88,85 L 50,68 L 12,85 Z" fill="${fill}" stroke="${stroke}" stroke-width="3" stroke-linejoin="round" />
+            <polygon points="50,22 75,75 50,62" fill="rgba(255,255,255,0.22)" />
+          </svg>
+        </div>
+      `;
+    }
+
+    nextFlock() {
+      this.targetDirection = this.directions[Math.floor(Math.random() * this.directions.length)];
+      const isIncongruent = Math.random() < 0.70;
+      if (isIncongruent) {
+        const otherDirs = this.directions.filter(d => d !== this.targetDirection);
+        this.flankerDirection = otherDirs[Math.floor(Math.random() * otherDirs.length)];
+      } else {
+        this.flankerDirection = this.targetDirection;
+      }
+
+      this.currentFormation = this.formations[Math.floor(Math.random() * this.formations.length)];
+
+      const flockEl = document.getElementById('lim-flock');
+      if (!flockEl) return;
+
+      flockEl.className = `flock-formation formation-${this.currentFormation}`;
+
+      let birdsHtml = '';
+      for (let i = 0; i < 5; i++) {
+        const isCenter = (i === 2);
+        const dir = isCenter ? this.targetDirection : this.flankerDirection;
+        birdsHtml += this.getBirdSvg(dir, isCenter);
+      }
+      flockEl.innerHTML = birdsHtml;
+      this.stimulusStartTime = Date.now();
+    }
+
+    handleDirectionInput(dir) {
+      if (!this.isActive) return;
+
+      const isCorrect = (dir === this.targetDirection);
+      const rt = Date.now() - this.stimulusStartTime;
+      this.reactionTimes.push(rt);
+
+      const skyEl = document.getElementById('lim-sky');
+
+      if (isCorrect) {
+        this.correctCount += 1;
+        this.streak += 1;
+        if (this.streak > this.maxStreak) this.maxStreak = this.streak;
+
+        const speedBonus = Math.max(50, 450 - Math.round(rt * 0.35));
+        const multiplier = 1 + Math.min(Math.floor(this.streak / 4) * 0.25, 2.5);
+        const roundScore = Math.round(speedBonus * multiplier);
+        this.score += roundScore;
+
+        soundEngine.playCorrect();
+        if (this.streak % 5 === 0) soundEngine.playStreak(this.streak);
+
+        if (skyEl) {
+          skyEl.classList.add('sky-flash-correct');
+          setTimeout(() => skyEl.classList.remove('sky-flash-correct'), 180);
+        }
+      } else {
+        this.wrongCount += 1;
+        this.streak = 0;
+        soundEngine.playWrong();
+
+        if (skyEl) {
+          skyEl.classList.add('sky-flash-wrong');
+          setTimeout(() => skyEl.classList.remove('sky-flash-wrong'), 220);
+        }
+      }
+
+      this.updateHUD();
+      this.nextFlock();
+    }
+
+    updateHUD() {
+      const scoreEl = document.getElementById('lim-score');
+      if (scoreEl) scoreEl.textContent = this.score.toLocaleString();
+
+      const streakEl = document.getElementById('lim-streak');
+      if (streakEl) streakEl.textContent = this.streak;
+    }
+
+    finishGame() {
+      this.stop();
+      const total = this.correctCount + this.wrongCount;
+      const accuracy = total > 0 ? Math.round((this.correctCount / total) * 100) : 0;
+      const avgRt = this.reactionTimes.length > 0
+        ? Math.round(this.reactionTimes.reduce((a, b) => a + b, 0) / this.reactionTimes.length)
+        : 0;
+
+      soundEngine.playGameOver();
+      if (this.onGameOver) {
+        this.onGameOver({
+          gameId: 'lost-in-migration',
+          score: this.score,
+          accuracy,
+          stats: [
+            { label: 'Attention Streak', value: `${this.maxStreak} birds` },
+            { label: 'Decision Speed', value: `${avgRt} ms` },
+            { label: 'Accuracy', value: `${accuracy}% (${this.correctCount}/${total})` }
+          ]
+        });
+      }
+    }
+  }
+
+  /* --------------------------------------------------------------------------
+     7. Game 4: Color Match (Cognitive Flexibility & Stroop Task)
+     -------------------------------------------------------------------------- */
+  class ColorMatchGame {
+    constructor(containerId, onGameOver) {
+      this.container = document.getElementById(containerId);
+      this.onGameOver = onGameOver;
+      this.isActive = false;
+
+      this.palette = [
+        { name: 'RED', hex: '#ef4444' },
+        { name: 'BLUE', hex: '#0284c7' },
+        { name: 'GREEN', hex: '#10b981' },
+        { name: 'YELLOW', hex: '#f59e0b' },
+        { name: 'PURPLE', hex: '#8b5cf6' }
+      ];
+
+      this.duration = 45;
+      this.timeLeft = this.duration;
+      this.score = 0;
+      this.streak = 0;
+      this.maxStreak = 0;
+      this.correctCount = 0;
+      this.wrongCount = 0;
+      this.reactionTimes = [];
+
+      this.topWord = null;
+      this.topInk = null;
+      this.bottomWord = null;
+      this.bottomInk = null;
+      this.trialStartTime = 0;
+      this.timerInterval = null;
+      this.keyListener = null;
+    }
+
+    start() {
+      this.isActive = true;
+      this.timeLeft = this.duration;
+      this.score = 0;
+      this.streak = 0;
+      this.maxStreak = 0;
+      this.correctCount = 0;
+      this.wrongCount = 0;
+      this.reactionTimes = [];
+
+      soundEngine.playGameStart();
+      this.renderShell();
+      this.bindControls();
+      this.startTimer();
+      this.nextTrial();
+    }
+
+    stop() {
+      this.isActive = false;
+      if (this.timerInterval) clearInterval(this.timerInterval);
+      if (this.keyListener) {
+        window.removeEventListener('keydown', this.keyListener);
+        this.keyListener = null;
+      }
+    }
+
+    renderShell() {
+      this.container.innerHTML = `
+        <div class="game-hud">
+          <div class="hud-item">
+            <span class="hud-label">Score</span>
+            <span class="hud-val hud-accent" id="cm-score">0</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Time Left</span>
+            <span class="hud-val" id="cm-timer">${this.timeLeft}s</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Multiplier</span>
+            <span class="hud-val hud-bonus" id="cm-mult">1.0x</span>
+          </div>
+        </div>
+
+        <div class="color-stage">
+          <div class="color-rule-box">
+            Does the <strong>top word's INK color</strong> match the <strong>bottom word's MEANING</strong>?
+          </div>
+
+          <div class="color-cards-container">
+            <div class="stroop-card" id="cm-card-top">
+              <span class="card-indicator">TOP WORD</span>
+              <div class="stroop-word" id="cm-word-top">RED</div>
+            </div>
+            <div class="stroop-vs-divider">VS</div>
+            <div class="stroop-card" id="cm-card-bottom">
+              <span class="card-indicator">BOTTOM WORD</span>
+              <div class="stroop-word" id="cm-word-bottom">BLUE</div>
+            </div>
+          </div>
+
+          <div class="speed-controls">
+            <button class="btn-speed btn-no" id="cm-btn-no">
+              <span class="key-hint">← Left</span>
+              <strong>NO</strong>
+            </button>
+            <button class="btn-speed btn-yes" id="cm-btn-yes">
+              <span class="key-hint">Right →</span>
+              <strong>YES</strong>
+            </button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('cm-btn-no').addEventListener('click', () => this.handleAnswer(false));
+      document.getElementById('cm-btn-yes').addEventListener('click', () => this.handleAnswer(true));
+    }
+
+    bindControls() {
+      this.keyListener = (e) => {
+        if (!this.isActive) return;
+        if (e.key === 'ArrowLeft' || e.key.toLowerCase() === 'a') {
+          e.preventDefault();
+          this.handleAnswer(false);
+        } else if (e.key === 'ArrowRight' || e.key.toLowerCase() === 'd') {
+          e.preventDefault();
+          this.handleAnswer(true);
+        }
+      };
+      window.addEventListener('keydown', this.keyListener);
+    }
+
+    startTimer() {
+      const timerEl = document.getElementById('cm-timer');
+      this.timerInterval = setInterval(() => {
+        if (!this.isActive) return;
+        this.timeLeft -= 1;
+        if (timerEl) {
+          timerEl.textContent = `${this.timeLeft}s`;
+          if (this.timeLeft <= 5) {
+            timerEl.classList.add('pulse-danger');
+            soundEngine.playTick();
+          }
+        }
+        if (this.timeLeft <= 0) this.finishGame();
+      }, 1000);
+    }
+
+    nextTrial() {
+      const shouldMatch = Math.random() < 0.50;
+      this.topInk = this.palette[Math.floor(Math.random() * this.palette.length)];
+
+      const otherTopWords = this.palette.filter(c => c.name !== this.topInk.name);
+      this.topWord = Math.random() < 0.75 
+        ? otherTopWords[Math.floor(Math.random() * otherTopWords.length)]
+        : this.topInk;
+
+      if (shouldMatch) {
+        this.bottomWord = this.topInk;
+      } else {
+        const nonMatches = this.palette.filter(c => c.name !== this.topInk.name);
+        this.bottomWord = nonMatches[Math.floor(Math.random() * nonMatches.length)];
+      }
+
+      this.bottomInk = this.palette[Math.floor(Math.random() * this.palette.length)];
+
+      const topWordEl = document.getElementById('cm-word-top');
+      const btmWordEl = document.getElementById('cm-word-bottom');
+
+      if (topWordEl && btmWordEl) {
+        topWordEl.textContent = this.topWord.name;
+        topWordEl.style.color = this.topInk.hex;
+        btmWordEl.textContent = this.bottomWord.name;
+        btmWordEl.style.color = this.bottomInk.hex;
+      }
+
+      this.trialStartTime = Date.now();
+    }
+
+    handleAnswer(userSaysYes) {
+      if (!this.isActive) return;
+
+      const actualMatch = (this.topInk.name === this.bottomWord.name);
+      const isCorrect = (userSaysYes === actualMatch);
+      const rt = Date.now() - this.trialStartTime;
+      this.reactionTimes.push(rt);
+
+      const topCardEl = document.getElementById('cm-card-top');
+      const btmCardEl = document.getElementById('cm-card-bottom');
+
+      if (isCorrect) {
+        this.correctCount += 1;
+        this.streak += 1;
+        if (this.streak > this.maxStreak) this.maxStreak = this.streak;
+
+        const multiplier = 1 + Math.min(Math.floor(this.streak / 3) * 0.25, 2.5);
+        const speedPoints = Math.max(50, 420 - Math.round(rt * 0.3));
+        const roundScore = Math.round(speedPoints * multiplier);
+        this.score += roundScore;
+
+        soundEngine.playCorrect();
+        if (this.streak % 4 === 0) soundEngine.playStreak(this.streak);
+
+        [topCardEl, btmCardEl].forEach(c => {
+          if (c) {
+            c.classList.add('correct-glow');
+            setTimeout(() => c.classList.remove('correct-glow'), 180);
+          }
+        });
+      } else {
+        this.wrongCount += 1;
+        this.streak = 0;
+        soundEngine.playWrong();
+
+        [topCardEl, btmCardEl].forEach(c => {
+          if (c) {
+            c.classList.add('wrong-shake');
+            setTimeout(() => c.classList.remove('wrong-shake'), 240);
+          }
+        });
+      }
+
+      this.updateHUD();
+      this.nextTrial();
+    }
+
+    updateHUD() {
+      const scoreEl = document.getElementById('cm-score');
+      if (scoreEl) scoreEl.textContent = this.score.toLocaleString();
+
+      const multEl = document.getElementById('cm-mult');
+      if (multEl) {
+        const mult = 1 + Math.min(Math.floor(this.streak / 3) * 0.25, 2.5);
+        multEl.textContent = `${mult.toFixed(1)}x`;
+      }
+    }
+
+    finishGame() {
+      this.stop();
+      const total = this.correctCount + this.wrongCount;
+      const accuracy = total > 0 ? Math.round((this.correctCount / total) * 100) : 0;
+      const avgRt = this.reactionTimes.length > 0
+        ? Math.round(this.reactionTimes.reduce((a, b) => a + b, 0) / this.reactionTimes.length)
+        : 0;
+
+      soundEngine.playGameOver();
+      if (this.onGameOver) {
+        this.onGameOver({
+          gameId: 'color-match',
+          score: this.score,
+          accuracy,
+          stats: [
+            { label: 'Max Streak', value: `${this.maxStreak} in a row` },
+            { label: 'Avg Speed', value: `${avgRt} ms` },
+            { label: 'Accuracy', value: `${accuracy}% (${this.correctCount}/${total})` }
+          ]
+        });
+      }
+    }
+  }
+
+  /* --------------------------------------------------------------------------
+     8. Game 5: Chalkboard Challenge (Quantitative Reasoning)
+     -------------------------------------------------------------------------- */
+  class ChalkboardChallengeGame {
+    constructor(containerId, onGameOver) {
+      this.container = document.getElementById(containerId);
+      this.onGameOver = onGameOver;
+      this.isActive = false;
+
+      this.duration = 50;
+      this.timeLeft = this.duration;
+      this.score = 0;
+      this.streak = 0;
+      this.maxStreak = 0;
+      this.correctCount = 0;
+      this.wrongCount = 0;
+      this.reactionTimes = [];
+
+      this.sideA = { expr: '', val: 0 };
+      this.sideB = { expr: '', val: 0 };
+      this.trialStartTime = 0;
+      this.timerInterval = null;
+      this.keyListener = null;
+    }
+
+    start() {
+      this.isActive = true;
+      this.timeLeft = this.duration;
+      this.score = 0;
+      this.streak = 0;
+      this.maxStreak = 0;
+      this.correctCount = 0;
+      this.wrongCount = 0;
+      this.reactionTimes = [];
+
+      soundEngine.playGameStart();
+      this.renderShell();
+      this.bindControls();
+      this.startTimer();
+      this.nextProblem();
+    }
+
+    stop() {
+      this.isActive = false;
+      if (this.timerInterval) clearInterval(this.timerInterval);
+      if (this.keyListener) {
+        window.removeEventListener('keydown', this.keyListener);
+        this.keyListener = null;
+      }
+    }
+
+    renderShell() {
+      this.container.innerHTML = `
+        <div class="game-hud">
+          <div class="hud-item">
+            <span class="hud-label">Score</span>
+            <span class="hud-val hud-accent" id="cc-score">0</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Time Left</span>
+            <span class="hud-val" id="cc-timer">${this.timeLeft}s</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">Multiplier</span>
+            <span class="hud-val hud-bonus" id="cc-mult">1.0x</span>
+          </div>
+        </div>
+
+        <div class="chalkboard-stage">
+          <div class="chalkboard-prompt">Compare the values of Side A and Side B</div>
+
+          <div class="chalkboard-frame">
+            <div class="chalkboard-panel" id="cc-panel-a">
+              <span class="chalk-tag">SIDE A</span>
+              <div class="chalk-math" id="cc-math-a">12 + 15</div>
+            </div>
+            <div class="chalk-separator">VS</div>
+            <div class="chalkboard-panel" id="cc-panel-b">
+              <span class="chalk-tag">SIDE B</span>
+              <div class="chalk-math" id="cc-math-b">7 × 4</div>
+            </div>
+          </div>
+
+          <div class="chalk-controls">
+            <button class="btn-chalk" id="cc-btn-left">
+              <span class="chalk-key-hint">Left / 1</span>
+              <strong>Side A > B</strong>
+              <span class="chalk-sub-label">A is Greater</span>
+            </button>
+            <button class="btn-chalk" id="cc-btn-equal">
+              <span class="chalk-key-hint">Down / 2</span>
+              <strong>A = B</strong>
+              <span class="chalk-sub-label">Equal Values</span>
+            </button>
+            <button class="btn-chalk" id="cc-btn-right">
+              <span class="chalk-key-hint">Right / 3</span>
+              <strong>Side A < B</strong>
+              <span class="chalk-sub-label">B is Greater</span>
+            </button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('cc-btn-left').addEventListener('click', () => this.handleAnswer('A'));
+      document.getElementById('cc-btn-equal').addEventListener('click', () => this.handleAnswer('='));
+      document.getElementById('cc-btn-right').addEventListener('click', () => this.handleAnswer('B'));
+    }
+
+    bindControls() {
+      this.keyListener = (e) => {
+        if (!this.isActive) return;
+        const k = e.key;
+        if (k === 'ArrowLeft' || k === '1' || k.toLowerCase() === 'a') {
+          e.preventDefault();
+          this.handleAnswer('A');
+        } else if (k === 'ArrowDown' || k === '2' || k.toLowerCase() === 's') {
+          e.preventDefault();
+          this.handleAnswer('=');
+        } else if (k === 'ArrowRight' || k === '3' || k.toLowerCase() === 'd') {
+          e.preventDefault();
+          this.handleAnswer('B');
+        }
+      };
+      window.addEventListener('keydown', this.keyListener);
+    }
+
+    startTimer() {
+      const timerEl = document.getElementById('cc-timer');
+      this.timerInterval = setInterval(() => {
+        if (!this.isActive) return;
+        this.timeLeft -= 1;
+        if (timerEl) {
+          timerEl.textContent = `${this.timeLeft}s`;
+          if (this.timeLeft <= 5) {
+            timerEl.classList.add('pulse-danger');
+            soundEngine.playTick();
+          }
+        }
+        if (this.timeLeft <= 0) this.finishGame();
+      }, 1000);
+    }
+
+    generateExpression(difficulty = 1) {
+      let val = 0;
+      let expr = '';
+
+      if (difficulty === 1) {
+        if (Math.random() < 0.25) {
+          val = Math.floor(Math.random() * 40) + 5;
+          expr = `${val}`;
+        } else {
+          const op = Math.random() < 0.5 ? '+' : '-';
+          if (op === '+') {
+            const n1 = Math.floor(Math.random() * 25) + 3;
+            const n2 = Math.floor(Math.random() * 25) + 3;
+            val = n1 + n2;
+            expr = `${n1} + ${n2}`;
+          } else {
+            const n1 = Math.floor(Math.random() * 30) + 10;
+            const n2 = Math.floor(Math.random() * (n1 - 2)) + 1;
+            val = n1 - n2;
+            expr = `${n1} - ${n2}`;
+          }
+        }
+      } else if (difficulty === 2) {
+        const op = Math.random() < 0.5 ? '×' : '÷';
+        if (op === '×') {
+          const n1 = Math.floor(Math.random() * 9) + 2;
+          const n2 = Math.floor(Math.random() * 9) + 2;
+          val = n1 * n2;
+          expr = `${n1} × ${n2}`;
+        } else {
+          const div = Math.floor(Math.random() * 8) + 2;
+          const res = Math.floor(Math.random() * 10) + 2;
+          val = res;
+          expr = `${div * res} ÷ ${div}`;
+        }
+      } else {
+        const opType = Math.floor(Math.random() * 3);
+        if (opType === 0) {
+          const a = Math.floor(Math.random() * 6) + 3;
+          const b = Math.floor(Math.random() * 6) + 2;
+          const c = Math.floor(Math.random() * 15) + 2;
+          val = (a * b) + c;
+          expr = `(${a} × ${b}) + ${c}`;
+        } else if (opType === 1) {
+          const a = Math.floor(Math.random() * 5) + 2;
+          const b = Math.floor(Math.random() * 5) + 2;
+          const c = Math.floor(Math.random() * 4) + 2;
+          val = (a + b) * c;
+          expr = `(${a} + ${b}) × ${c}`;
+        } else {
+          const a = Math.floor(Math.random() * 8) + 3;
+          const b = Math.floor(Math.random() * 6) + 3;
+          const c = Math.floor(Math.random() * 12) + 2;
+          val = (a * b) - c;
+          expr = `${a} × ${b} - ${c}`;
+        }
+      }
+      return { expr, val };
+    }
+
+    nextProblem() {
+      const diff = this.streak < 3 ? 1 : (this.streak < 7 ? 2 : 3);
+      this.sideA = this.generateExpression(diff);
+
+      const forceEqual = Math.random() < 0.25;
+      if (forceEqual) {
+        const targetVal = this.sideA.val;
+        let matched = false;
+        for (let attempt = 0; attempt < 8; attempt++) {
+          const candidate = this.generateExpression(diff);
+          if (candidate.val === targetVal && candidate.expr !== this.sideA.expr) {
+            this.sideB = candidate;
+            matched = true;
+            break;
+          }
+        }
+        if (!matched) this.sideB = { expr: `${targetVal}`, val: targetVal };
+      } else {
+        let cand = this.generateExpression(diff);
+        if (cand.val === this.sideA.val) {
+          cand.val += (Math.random() < 0.5 ? 2 : -2);
+          cand.expr = `${cand.val}`;
+        }
+        this.sideB = cand;
+      }
+
+      const mathAEl = document.getElementById('cc-math-a');
+      const mathBEl = document.getElementById('cc-math-b');
+      if (mathAEl && mathBEl) {
+        mathAEl.textContent = this.sideA.expr;
+        mathBEl.textContent = this.sideB.expr;
+      }
+
+      this.trialStartTime = Date.now();
+    }
+
+    handleAnswer(choice) {
+      if (!this.isActive) return;
+
+      let correctChoice = '=';
+      if (this.sideA.val > this.sideB.val) correctChoice = 'A';
+      else if (this.sideB.val > this.sideA.val) correctChoice = 'B';
+
+      const isCorrect = (choice === correctChoice);
+      const rt = Date.now() - this.trialStartTime;
+      this.reactionTimes.push(rt);
+
+      const panelA = document.getElementById('cc-panel-a');
+      const panelB = document.getElementById('cc-panel-b');
+
+      if (isCorrect) {
+        this.correctCount += 1;
+        this.streak += 1;
+        if (this.streak > this.maxStreak) this.maxStreak = this.streak;
+
+        const multiplier = 1 + Math.min(Math.floor(this.streak / 3) * 0.25, 2.5);
+        const speedPoints = Math.max(50, 450 - Math.round(rt * 0.25));
+        const roundScore = Math.round(speedPoints * multiplier);
+        this.score += roundScore;
+
+        soundEngine.playCorrect();
+        if (this.streak % 4 === 0) soundEngine.playStreak(this.streak);
+
+        [panelA, panelB].forEach(p => {
+          if (p) {
+            p.classList.add('correct-glow');
+            setTimeout(() => p.classList.remove('correct-glow'), 180);
+          }
+        });
+      } else {
+        this.wrongCount += 1;
+        this.streak = 0;
+        soundEngine.playWrong();
+
+        [panelA, panelB].forEach(p => {
+          if (p) {
+            p.classList.add('wrong-shake');
+            setTimeout(() => p.classList.remove('wrong-shake'), 240);
+          }
+        });
+      }
+
+      this.updateHUD();
+      this.nextProblem();
+    }
+
+    updateHUD() {
+      const scoreEl = document.getElementById('cc-score');
+      if (scoreEl) scoreEl.textContent = this.score.toLocaleString();
+
+      const multEl = document.getElementById('cc-mult');
+      if (multEl) {
+        const mult = 1 + Math.min(Math.floor(this.streak / 3) * 0.25, 2.5);
+        multEl.textContent = `${mult.toFixed(1)}x`;
+      }
+    }
+
+    finishGame() {
+      this.stop();
+      const total = this.correctCount + this.wrongCount;
+      const accuracy = total > 0 ? Math.round((this.correctCount / total) * 100) : 0;
+      const avgRt = this.reactionTimes.length > 0
+        ? Math.round(this.reactionTimes.reduce((a, b) => a + b, 0) / this.reactionTimes.length)
+        : 0;
+
+      soundEngine.playGameOver();
+      if (this.onGameOver) {
+        this.onGameOver({
+          gameId: 'chalkboard-challenge',
+          score: this.score,
+          accuracy,
+          stats: [
+            { label: 'Max Streak', value: `${this.maxStreak} correct` },
+            { label: 'Calculation Time', value: `${avgRt} ms` },
+            { label: 'Accuracy', value: `${accuracy}% (${this.correctCount}/${total})` }
+          ]
+        });
+      }
+    }
+  }
+
+  /* --------------------------------------------------------------------------
+     9. Main App Router & Orchestrator
+     -------------------------------------------------------------------------- */
+  class App {
+    constructor() {
+      this.currentGameInstance = null;
+      this.currentGameId = null;
+      this.isWorkoutMode = false;
+      this.init();
+    }
+
+    init() {
+      this.bindEvents();
+      this.updateHeaderAndDashboard();
+      this.showScreen('dashboard');
+    }
+
+    bindEvents() {
+      document.getElementById('nav-dashboard').addEventListener('click', () => this.showScreen('dashboard'));
+      document.getElementById('nav-games').addEventListener('click', () => this.showScreen('games-hub'));
+      document.getElementById('nav-analytics').addEventListener('click', () => this.openAnalyticsModal());
+      document.getElementById('nav-settings').addEventListener('click', () => this.openSettingsModal());
+      document.getElementById('nav-brand').addEventListener('click', () => this.showScreen('dashboard'));
+
+      const soundBtn = document.getElementById('sound-toggle-btn');
+      this.updateSoundButtonUI(soundEngine.enabled);
+      soundBtn.addEventListener('click', () => {
+        const enabled = soundEngine.toggleSound();
+        this.updateSoundButtonUI(enabled);
+      });
+
+      document.getElementById('btn-start-workout').addEventListener('click', () => this.startDailyWorkout());
+      document.getElementById('btn-exit-game').addEventListener('click', () => this.exitCurrentGame());
+
+      document.querySelectorAll('.modal-close').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const modal = e.target.closest('.modal-overlay');
+          if (modal) modal.classList.remove('active');
+        });
+      });
+
+      document.getElementById('btn-result-next').addEventListener('click', () => this.handleResultContinue());
+      document.getElementById('btn-result-hub').addEventListener('click', () => {
+        document.getElementById('modal-results').classList.remove('active');
+        this.showScreen('dashboard');
+      });
+
+      document.getElementById('btn-export-data').addEventListener('click', () => this.handleExportData());
+      document.getElementById('btn-import-data').addEventListener('click', () => {
+        document.getElementById('file-import-input').click();
+      });
+      document.getElementById('file-import-input').addEventListener('change', (e) => this.handleImportData(e));
+      document.getElementById('btn-reset-data').addEventListener('click', () => this.handleResetData());
+
+      const usernameInput = document.getElementById('settings-username');
+      if (usernameInput) {
+        usernameInput.value = stateManager.state.profile.username || 'NeuroTrainer';
+        usernameInput.addEventListener('change', (e) => {
+          stateManager.state.profile.username = e.target.value.trim() || 'NeuroTrainer';
+          stateManager.saveState();
+          this.updateHeaderAndDashboard();
+        });
+      }
+
+      document.getElementById('btn-celebration-close').addEventListener('click', () => {
+        document.getElementById('modal-celebration').classList.remove('active');
+        this.showScreen('dashboard');
+      });
+    }
+
+    updateSoundButtonUI(enabled) {
+      const btn = document.getElementById('sound-toggle-btn');
+      if (btn) {
+        btn.innerHTML = enabled ? '🔊 <span class="nav-text">Sound ON</span>' : '🔇 <span class="nav-text">Muted</span>';
+      }
+    }
+
+    showScreen(screenId) {
+      if (screenId !== 'game-arena' && this.currentGameInstance) {
+        this.currentGameInstance.stop();
+        this.currentGameInstance = null;
+      }
+
+      document.querySelectorAll('.app-screen').forEach(s => s.classList.remove('active'));
+      const target = document.getElementById(`screen-${screenId}`);
+      if (target) target.classList.add('active');
+
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      const navBtn = document.getElementById(`nav-${screenId}`);
+      if (navBtn) navBtn.classList.add('active');
+
+      if (screenId === 'dashboard') {
+        this.updateHeaderAndDashboard();
+      } else if (screenId === 'games-hub') {
+        this.renderGamesHub();
+      }
+    }
+
+    updateHeaderAndDashboard() {
+      const state = stateManager.state;
+
+      const bpiEl = document.getElementById('header-bpi-val');
+      if (bpiEl) bpiEl.textContent = state.overallBPI;
+
+      const streakEl = document.getElementById('header-streak-val');
+      if (streakEl) streakEl.textContent = state.streak.current;
+
+      const greetEl = document.getElementById('dash-username');
+      if (greetEl) greetEl.textContent = state.profile.username || 'NeuroTrainer';
+
+      const dashStreakEl = document.getElementById('dash-streak-count');
+      if (dashStreakEl) dashStreakEl.textContent = `${state.streak.current} Days`;
+
+      this.renderCategoryCards();
+      this.renderDailyWorkoutStatus();
+
+      setTimeout(() => {
+        chartEngine.renderRadarChart('radar-canvas-dash', state.categories);
+      }, 50);
+    }
+
+    renderCategoryCards() {
+      const container = document.getElementById('dash-category-grid');
+      if (!container) return;
+
+      const state = stateManager.state;
+      container.innerHTML = '';
+
+      const catKeys = ['memory', 'speed', 'attention', 'flexibility', 'problemSolving'];
+      catKeys.forEach(key => {
+        const cat = state.categories[key];
+        const card = document.createElement('div');
+        card.className = 'category-card';
+        card.style.borderColor = `${cat.color}40`;
+
+        const gameDef = Object.values(GAME_DEFINITIONS).find(g => g.category === key);
+
+        card.innerHTML = `
+          <div class="cat-card-header">
+            <span class="cat-icon" style="background: ${cat.color}20; color: ${cat.color};">${gameDef ? gameDef.icon : '🧠'}</span>
+            <span class="cat-bpi" style="color: ${cat.color};">${cat.bpi || 850} BPI</span>
+          </div>
+          <div class="cat-name">${cat.name}</div>
+          <div class="cat-meta">Best Score: ${(cat.bestScore || 0).toLocaleString()}</div>
+          <button class="btn-cat-play" data-game="${gameDef ? gameDef.id : ''}">Train Now →</button>
+        `;
+
+        card.querySelector('.btn-cat-play').addEventListener('click', (e) => {
+          const gid = e.target.dataset.game;
+          if (gid) this.launchGame(gid, false);
+        });
+
+        container.appendChild(card);
+      });
+    }
+
+    renderDailyWorkoutStatus() {
+      const daily = stateManager.state.dailyWorkout;
+      const isCompleted = daily.isCompleted;
+      const completedCount = (daily.completedGames || []).length;
+      const totalCount = DAILY_WORKOUT_GAME_IDS.length;
+
+      const startBtn = document.getElementById('btn-start-workout');
+      const progressEl = document.getElementById('daily-progress-pills');
+
+      if (progressEl) {
+        progressEl.innerHTML = '';
+        DAILY_WORKOUT_GAME_IDS.forEach((gid) => {
+          const gameDef = GAME_DEFINITIONS[gid];
+          const isDone = daily.completedGames.includes(gid);
+          const pill = document.createElement('div');
+          pill.className = `workout-pill ${isDone ? 'completed' : ''}`;
+          pill.innerHTML = `
+            <span class="pill-icon">${gameDef.icon}</span>
+            <span class="pill-name">${gameDef.name}</span>
+            <span class="pill-check">${isDone ? '✓' : '○'}</span>
+          `;
+          progressEl.appendChild(pill);
+        });
+      }
+
+      if (isCompleted) {
+        if (startBtn) {
+          startBtn.textContent = '🎉 Workout Completed! Play Again';
+          startBtn.classList.remove('btn-primary');
+          startBtn.classList.add('btn-secondary');
+        }
+      } else {
+        if (startBtn) {
+          startBtn.textContent = completedCount > 0 ? `Continue Workout (${completedCount}/${totalCount})` : 'Start Daily Workout (5 Games)';
+          startBtn.classList.add('btn-primary');
+          startBtn.classList.remove('btn-secondary');
+        }
+      }
+    }
+
+    renderGamesHub() {
+      const container = document.getElementById('games-list-grid');
+      if (!container) return;
+
+      container.innerHTML = '';
+      const state = stateManager.state;
+
+      Object.values(GAME_DEFINITIONS).forEach(game => {
+        const cat = state.categories[game.category] || { bpi: 850, bestScore: 0 };
+        const card = document.createElement('div');
+        card.className = 'game-hub-card';
+
+        card.innerHTML = `
+          <div class="game-hub-badge" style="background: ${cat.color}15; color: ${cat.color};">
+            ${cat.name.toUpperCase()}
+          </div>
+          <div class="game-hub-header">
+            <span class="game-hub-icon">${game.icon}</span>
+            <div>
+              <h3 class="game-hub-title">${game.name}</h3>
+              <p class="game-hub-desc">${game.summary}</p>
+            </div>
+          </div>
+          <div class="game-hub-rule">
+            💡 <em>${game.instruction}</em>
+          </div>
+          <div class="game-hub-stats">
+            <div><span class="stat-lbl">Index:</span> <strong>${cat.bpi} BPI</strong></div>
+            <div><span class="stat-lbl">High Score:</span> <strong>${cat.bestScore.toLocaleString()}</strong></div>
+          </div>
+          <button class="btn-play-game" data-game="${game.id}">Play Game</button>
+        `;
+
+        card.querySelector('.btn-play-game').addEventListener('click', () => {
+          this.launchGame(game.id, false);
+        });
+
+        container.appendChild(card);
+      });
+    }
+
+    startDailyWorkout() {
+      this.isWorkoutMode = true;
+      const daily = stateManager.state.dailyWorkout;
+
+      let nextGameId = DAILY_WORKOUT_GAME_IDS.find(id => !daily.completedGames.includes(id));
+      if (!nextGameId) nextGameId = DAILY_WORKOUT_GAME_IDS[0];
+
+      this.launchGame(nextGameId, true);
+    }
+
+    launchGame(gameId, isWorkoutMode = false) {
+      this.currentGameId = gameId;
+      this.isWorkoutMode = isWorkoutMode;
+
+      const gameDef = GAME_DEFINITIONS[gameId];
+      if (!gameDef) return;
+
+      document.getElementById('arena-game-name').textContent = gameDef.name;
+      document.getElementById('arena-game-icon').textContent = gameDef.icon;
+      const modeBadge = document.getElementById('arena-mode-badge');
+      if (modeBadge) {
+        if (isWorkoutMode) {
+          const stepIdx = DAILY_WORKOUT_GAME_IDS.indexOf(gameId) + 1;
+          modeBadge.textContent = `Daily Workout: Game ${stepIdx} of 5`;
+          modeBadge.style.display = 'inline-block';
+        } else {
+          modeBadge.style.display = 'none';
+        }
+      }
+
+      this.showScreen('game-arena');
+
+      const containerId = 'game-canvas-area';
+      const onGameOverCallback = (res) => this.handleGameOver(res);
+
+      switch (gameId) {
+        case 'memory-matrix':
+          this.currentGameInstance = new MemoryMatrixGame(containerId, onGameOverCallback);
+          break;
+        case 'speed-match':
+          this.currentGameInstance = new SpeedMatchGame(containerId, onGameOverCallback);
+          break;
+        case 'lost-in-migration':
+          this.currentGameInstance = new LostMigrationGame(containerId, onGameOverCallback);
+          break;
+        case 'color-match':
+          this.currentGameInstance = new ColorMatchGame(containerId, onGameOverCallback);
+          break;
+        case 'chalkboard-challenge':
+          this.currentGameInstance = new ChalkboardChallengeGame(containerId, onGameOverCallback);
+          break;
+      }
+
+      this.currentGameInstance.start();
+    }
+
+    exitCurrentGame() {
+      if (this.currentGameInstance) {
+        this.currentGameInstance.stop();
+        this.currentGameInstance = null;
+      }
+      this.showScreen('dashboard');
+    }
+
+    handleGameOver(gameResult) {
+      const record = stateManager.recordGameResult(
+        gameResult.gameId,
+        gameResult.score,
+        gameResult.accuracy,
+        this.isWorkoutMode
+      );
+
+      this.showResultsModal(gameResult, record);
+    }
+
+    showResultsModal(gameResult, record) {
+      const modal = document.getElementById('modal-results');
+      const gameDef = GAME_DEFINITIONS[gameResult.gameId];
+
+      document.getElementById('res-game-title').textContent = gameDef ? gameDef.name : 'Game Complete';
+      document.getElementById('res-score').textContent = gameResult.score.toLocaleString();
+
+      const bpiDiffEl = document.getElementById('res-bpi-diff');
+      if (bpiDiffEl) {
+        const diff = record.bpiDiff;
+        if (diff > 0) {
+          bpiDiffEl.className = 'res-bpi-tag positive';
+          bpiDiffEl.textContent = `+${diff} BPI (New: ${record.newCatBPI})`;
+        } else if (diff < 0) {
+          bpiDiffEl.className = 'res-bpi-tag negative';
+          bpiDiffEl.textContent = `${diff} BPI (New: ${record.newCatBPI})`;
+        } else {
+          bpiDiffEl.className = 'res-bpi-tag neutral';
+          bpiDiffEl.textContent = `±0 BPI (${record.newCatBPI})`;
+        }
+      }
+
+      const statsContainer = document.getElementById('res-stats-list');
+      statsContainer.innerHTML = '';
+      (gameResult.stats || []).forEach(stat => {
+        const div = document.createElement('div');
+        div.className = 'res-stat-item';
+        div.innerHTML = `<span class="stat-lbl">${stat.label}</span><strong>${stat.value}</strong>`;
+        statsContainer.appendChild(div);
+      });
+
+      const nextBtn = document.getElementById('btn-result-next');
+      if (this.isWorkoutMode) {
+        const daily = stateManager.state.dailyWorkout;
+        const nextGame = DAILY_WORKOUT_GAME_IDS.find(id => !daily.completedGames.includes(id));
+        nextBtn.textContent = nextGame ? 'Next Workout Game →' : 'View Daily Celebration 🎉';
+      } else {
+        nextBtn.textContent = 'Play Again';
+      }
+
+      modal.classList.add('active');
+    }
+
+    handleResultContinue() {
+      document.getElementById('modal-results').classList.remove('active');
+
+      if (this.isWorkoutMode) {
+        const daily = stateManager.state.dailyWorkout;
+        const nextGameId = DAILY_WORKOUT_GAME_IDS.find(id => !daily.completedGames.includes(id));
+
+        if (nextGameId) {
+          this.launchGame(nextGameId, true);
+        } else {
+          this.openCelebrationModal();
+        }
+      } else {
+        if (this.currentGameId) {
+          this.launchGame(this.currentGameId, false);
+        } else {
+          this.showScreen('games-hub');
+        }
+      }
+    }
+
+    openCelebrationModal() {
+      const modal = document.getElementById('modal-celebration');
+      const state = stateManager.state;
+
+      document.getElementById('cel-streak').textContent = `${state.streak.current} Days`;
+      document.getElementById('cel-overall-bpi').textContent = state.overallBPI;
+
+      soundEngine.playVictory();
+      modal.classList.add('active');
+    }
+
+    openAnalyticsModal() {
+      const modal = document.getElementById('modal-analytics');
+      const state = stateManager.state;
+
+      document.getElementById('an-overall-bpi').textContent = state.overallBPI;
+      document.getElementById('an-total-games').textContent = state.totalGamesPlayed;
+      document.getElementById('an-best-streak').textContent = `${state.streak.best} Days`;
+
+      setTimeout(() => {
+        chartEngine.renderRadarChart('radar-canvas-modal', state.categories);
+        chartEngine.renderBpiTrend('trend-canvas-modal', state.bpiHistory);
+      }, 60);
+
+      const tableBody = document.getElementById('an-history-tbody');
+      if (tableBody) {
+        tableBody.innerHTML = '';
+        if (state.history.length === 0) {
+          tableBody.innerHTML = '<tr><td colspan="5" class="empty-state">No games played yet. Start your first session!</td></tr>';
+        } else {
+          state.history.slice(0, 15).forEach(item => {
+            const row = document.createElement('tr');
+            const timeShort = item.timestamp ? new Date(item.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '';
+            const diffTag = item.bpiDiff > 0 ? `<span class="text-positive">+${item.bpiDiff}</span>` : (item.bpiDiff < 0 ? `<span class="text-negative">${item.bpiDiff}</span>` : '0');
+
+            row.innerHTML = `
+              <td>${timeShort}</td>
+              <td><strong>${item.gameName}</strong></td>
+              <td>${item.score.toLocaleString()}</td>
+              <td>${item.accuracy}%</td>
+              <td>${diffTag}</td>
+            `;
+            tableBody.appendChild(row);
+          });
+        }
+      }
+
+      modal.classList.add('active');
+    }
+
+    openSettingsModal() {
+      const modal = document.getElementById('modal-settings');
+      const input = document.getElementById('settings-username');
+      if (input) input.value = stateManager.state.profile.username || 'NeuroTrainer';
+      modal.classList.add('active');
+    }
+
+    handleExportData() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(stateManager.exportData());
+      const dlAnchor = document.createElement('a');
+      dlAnchor.setAttribute("href", dataStr);
+      dlAnchor.setAttribute("download", `neuroflex_backup_${new Date().toISOString().slice(0, 10)}.json`);
+      document.body.appendChild(dlAnchor);
+      dlAnchor.click();
+      dlAnchor.remove();
+    }
+
+    handleImportData(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const result = stateManager.importData(e.target.result);
+        if (result.success) {
+          alert('Data imported successfully!');
+          document.getElementById('modal-settings').classList.remove('active');
+          this.updateHeaderAndDashboard();
+        } else {
+          alert(`Failed to import: ${result.error}`);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    handleResetData() {
+      if (confirm('Are you sure you want to reset all scores, streaks, and BPI history? This cannot be undone.')) {
+        stateManager.resetAllData();
+        alert('All training records have been reset.');
+        document.getElementById('modal-settings').classList.remove('active');
+        this.updateHeaderAndDashboard();
+      }
+    }
+  }
+
+  // Initialize App on DOM Ready
+  window.addEventListener('DOMContentLoaded', () => {
+    window.app = new App();
+  });
+  </script>
+</body>
+</html>
