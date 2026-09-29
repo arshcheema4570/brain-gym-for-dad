@@ -25,4 +25,4 @@ This app is for entertainment and general mental activity. It is **not** a medic
 
 The MIT license in this repository applies only to original code, text, and design contributions made by the repository owner. It does not grant rights to any third-party names, trademarks, artwork, code, or other material that may be included in the uploaded HTML. Before redistributing the app publicly, confirm that you have permission for all included material and that the final branding does not imply affiliation with another company or product.
 
-This project is an independent app and is not affiliated with Lumosity or its owners.
+This project is an independent app and is not affiliated with any other company or product.
