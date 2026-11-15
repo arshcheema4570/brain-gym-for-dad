@@ -23,7 +23,7 @@
   "short_name": "NeuroFlex",
   "description": "Offline brain-training games. 100% single-file, zero dependencies.",
   "theme_color": "#274c77",
-  "background_color": "#eef4f8",
+  "background_color": "#f6f2e9",
   "categories": [
     "health",
     "education"
