@@ -400,6 +400,14 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   max-height: 100%;
 }
 
+.radar-empty-note {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 2rem 1rem;
+}
+
 /* Category Pillars Grid */
 .section-heading-bar {
   display: flex;
@@ -537,6 +545,7 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   gap: 1rem;
   align-items: flex-start;
   margin-bottom: 1rem;
+  padding-right: 7.5rem;
 }
 
 .game-hub-icon {
@@ -656,8 +665,7 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-lg);
-  padding: 2rem;
-  min-height: 520px;
+  padding: 1.75rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -673,7 +681,7 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   border: 1px solid var(--border-card);
   border-radius: var(--radius-md);
   padding: 0.75rem 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .hud-item {
@@ -696,8 +704,8 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   font-weight: 800;
 }
 
-.hud-accent { color: #6096ba; }
-.hud-bonus { color: #b45309; }
+.hud-accent { color: var(--ink); }
+.hud-bonus { color: #92400e; background: var(--gold-soft); padding: 0.05rem 0.6rem; border-radius: 999px; }
 
 .pulse-danger {
   color: #dc2626 !important;
@@ -834,7 +842,8 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   flex-direction: column;
   align-items: center;
   flex: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1.5rem;
 }
 
 .speed-question {
@@ -912,25 +921,25 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
 .key-hint { font-size: 0.75rem; font-weight: 600; opacity: 0.75; }
 
 .btn-no {
-  background: rgba(220, 38, 38, 0.08);
-  border-color: rgba(220, 38, 38, 0.4);
-  color: #b91c1c;
+  background: #dc2626;
+  border-color: #b91c1c;
+  color: #fff;
 }
 
 .btn-no:hover {
-  background: rgba(220, 38, 38, 0.30);
-  border-color: #dc2626;
+  background: #b91c1c;
+  border-color: #991b1b;
 }
 
 .btn-yes {
-  background: rgba(4, 120, 87, 0.10);
-  border-color: rgba(4, 120, 87, 0.4);
-  color: #047857;
+  background: #047857;
+  border-color: #065f46;
+  color: #fff;
 }
 
 .btn-yes:hover {
-  background: rgba(4, 120, 87, 0.3);
-  border-color: #047857;
+  background: #065f46;
+  border-color: #064e3b;
 }
 
 /* Game 3: Lost in Migration */
@@ -939,7 +948,8 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   flex-direction: column;
   align-items: center;
   flex: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1.5rem;
 }
 
 .flock-instruction {
@@ -1064,7 +1074,8 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   flex-direction: column;
   align-items: center;
   flex: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1.5rem;
 }
 
 .color-rule-box {
@@ -1091,7 +1102,7 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
 .stroop-card {
   flex: 1;
   min-width: 0;
-  height: 160px;
+  height: 140px;
   background: rgba(255, 253, 248, 0.95);
   border: 2px solid var(--border-card);
   border-radius: var(--radius-lg);
@@ -1122,10 +1133,14 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   overflow-wrap: anywhere;
 }
 
-.stroop-vs-divider {
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--text-muted);
+/* Neutral gold rule between the two word cards (not "VS" - this is a match task) */
+.stroop-divider {
+  width: 2px;
+  align-self: stretch;
+  min-height: 60px;
+  background: linear-gradient(180deg, transparent, var(--gold) 20%, var(--gold) 80%, transparent);
+  border-radius: 2px;
+  flex: 0 0 auto;
 }
 
 /* Game 5: Chalkboard Challenge */
@@ -1134,7 +1149,8 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   flex-direction: column;
   align-items: center;
   flex: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1.5rem;
 }
 
 .chalkboard-prompt {
@@ -1146,7 +1162,7 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
 .chalkboard-frame {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   width: 100%;
   max-width: 540px;
   margin: 1.5rem 0;
@@ -1155,11 +1171,15 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
 .chalkboard-panel {
   flex: 1;
   min-width: 0;
-  height: 170px;
-  background: #173d2b;
-  border: 3px solid #e5a83b;
+  height: 150px;
+  background-color: #173d2b;
+  background-image:
+    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(255, 253, 248, 0.05), transparent 70%),
+    radial-gradient(ellipse 50% 35% at 85% 15%, rgba(255, 253, 248, 0.04), transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.045 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  border: 5px solid #8a6d3b;
   border-radius: var(--radius-md);
-  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8), var(--shadow-md);
+  box-shadow: inset 0 0 0 2px #e5a83b, inset 0 0 40px rgba(0, 0, 0, 0.45), 0 10px 24px rgba(23, 61, 43, 0.18);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1171,14 +1191,15 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
 .chalk-tag {
   position: absolute;
   top: 12px;
+  font-family: "Chalkboard SE", "Comic Sans MS", "Segoe Print", Georgia, serif;
   font-size: 0.7rem;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #f2c46d;
 }
 
 .chalk-math {
-  font-family: "Courier New", Courier, monospace, sans-serif;
+  font-family: "Chalkboard SE", "Comic Sans MS", "Segoe Print", Georgia, serif;
   font-size: clamp(1.2rem, 6vw, 2.2rem);
   font-weight: 800;
   color: #fffdf8;
@@ -1186,9 +1207,12 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
 }
 
 .chalk-separator {
-  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
   font-weight: 900;
-  color: #f2c46d;
+  color: #92400e;
+  flex: 0 0 auto;
+  padding: 0 0.25rem;
 }
 
 .chalk-controls {
@@ -1215,7 +1239,6 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
 
 .btn-chalk strong { font-size: 1.1rem; }
 .chalk-key-hint { font-size: 0.7rem; font-weight: 600; color: #6096ba; }
-.chalk-sub-label { font-size: 0.72rem; color: var(--text-muted); }
 
 .btn-chalk:hover {
   background: rgba(96, 150, 186, 0.2);
@@ -1223,6 +1246,26 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
 }
 
 .btn-chalk:active { transform: scale(0.96); }
+.btn-chalk:focus-visible, .btn-speed:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+/* In-game answer feedback */
+.game-feedback {
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.35;
+  border-radius: var(--radius-md);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+}
+.game-feedback:empty { visibility: hidden; }
+.game-feedback.correct { background: rgba(4, 120, 87, 0.12); border-color: rgba(4, 120, 87, 0.4); color: #047857; }
+.game-feedback.wrong { background: rgba(220, 38, 38, 0.08); border-color: rgba(220, 38, 38, 0.4); color: #b91c1c; }
 
 /* Modals & Overlays */
 .modal-overlay {
@@ -1549,17 +1592,17 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   .games-list-grid { grid-template-columns: 1fr; }
 
   /* Colour Match: narrow the two cards, shrink the words so PURPLE fits */
-  .color-cards-container { gap: 0.6rem; margin: 1rem 0; }
+  .color-cards-container { gap: 0.75rem; margin: 1rem 0; }
   .stroop-card { height: 132px; border-radius: 16px; }
   .stroop-word { font-size: clamp(1.3rem, 6.4vw, 1.8rem); }
   .card-indicator { font-size: 0.6rem; top: 8px; }
-  .stroop-vs-divider { font-size: 0.9rem; }
+  .stroop-divider { min-height: 48px; }
   .color-rule-box { font-size: 0.85rem; line-height: 1.45; padding: 0.55rem 0.9rem; border-radius: 12px; width: 100%; }
   .speed-controls { gap: 0.75rem; }
   .btn-speed { padding: 1rem 0.5rem; min-height: 60px; font-size: 1.1rem; }
 
   /* Chalkboard: narrow panels, smaller sums, roomier answer buttons */
-  .chalkboard-frame { gap: 0.6rem; margin: 1rem 0; }
+  .chalkboard-frame { gap: 0.9rem; margin: 1rem 0; }
   .chalkboard-panel { height: 138px; border-width: 2px; border-radius: 14px; }
   .chalk-math { font-size: clamp(1.15rem, 5.6vw, 1.7rem); }
   .chalk-tag { font-size: 0.6rem; top: 8px; }
@@ -1568,8 +1611,8 @@ h1, h2, .hero-title, .game-hub-title, .arena-title, .section-title, .modal-heade
   .chalk-controls { gap: 0.6rem; }
   .btn-chalk { padding: 0.85rem 0.25rem; min-height: 64px; gap: 0.15rem; }
   .btn-chalk strong { font-size: clamp(0.85rem, 3.6vw, 1.05rem); }
-  .chalk-sub-label { font-size: 0.62rem; }
-  .chalk-key-hint { font-size: 0.62rem; }
+    .chalk-key-hint { font-size: 0.62rem; }
+  .btn-speed .key-hint, .btn-chalk .chalk-key-hint { display: none; }
 
   .res-modal-actions { flex-direction: column; }
   .res-score-num { font-size: 2.4rem; }
@@ -1680,6 +1723,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
           <div class="radar-canvas-wrap">
             <canvas id="radar-canvas-dash" width="300" height="260"></canvas>
           </div>
+          <p id="radar-empty-note" class="radar-empty-note" style="display: none;">Play a game to measure your brain map — the radar fills in as you train.</p>
         </div>
       </div>
 
@@ -2842,6 +2886,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
 
     stop() {
       this.isActive = false;
+      if (this.feedbackTimer) { clearTimeout(this.feedbackTimer); this.feedbackTimer = null; }
       if (this.timerInterval) clearInterval(this.timerInterval);
       if (this.keyListener) {
         window.removeEventListener('keydown', this.keyListener);
@@ -3097,6 +3142,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
 
     stop() {
       this.isActive = false;
+      if (this.feedbackTimer) { clearTimeout(this.feedbackTimer); this.feedbackTimer = null; }
       if (this.timerInterval) clearInterval(this.timerInterval);
       if (this.keyListener) {
         window.removeEventListener('keydown', this.keyListener);
@@ -3312,7 +3358,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
 
       this.palette = [
         { name: 'RED', hex: '#dc2626' },
-        { name: 'BLUE', hex: '#274c77' },
+        { name: 'BLUE', hex: '#2563eb' },
         { name: 'GREEN', hex: '#047857' },
         { name: 'YELLOW', hex: '#b45309' },
         { name: 'PURPLE', hex: '#7c3aed' }
@@ -3355,6 +3401,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
 
     stop() {
       this.isActive = false;
+      if (this.feedbackTimer) { clearTimeout(this.feedbackTimer); this.feedbackTimer = null; }
       if (this.timerInterval) clearInterval(this.timerInterval);
       if (this.keyListener) {
         window.removeEventListener('keydown', this.keyListener);
@@ -3370,6 +3417,10 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
             <span class="hud-val hud-accent" id="cm-score">0</span>
           </div>
           <div class="hud-item">
+            <span class="hud-label">Streak</span>
+            <span class="hud-val" id="cm-streak">0</span>
+          </div>
+          <div class="hud-item">
             <span class="hud-label">Time Left</span>
             <span class="hud-val" id="cm-timer">${this.timeLeft}s</span>
           </div>
@@ -3378,6 +3429,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
             <span class="hud-val hud-bonus" id="cm-mult">1.0x</span>
           </div>
         </div>
+        <div class="game-feedback" id="cm-feedback" aria-live="polite"></div>
 
         <div class="color-stage">
           <div class="color-rule-box">
@@ -3389,7 +3441,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
               <span class="card-indicator">TOP WORD</span>
               <div class="stroop-word" id="cm-word-top">RED</div>
             </div>
-            <div class="stroop-vs-divider">VS</div>
+            <div class="stroop-divider" aria-hidden="true"></div>
             <div class="stroop-card" id="cm-card-bottom">
               <span class="card-indicator">BOTTOM WORD</span>
               <div class="stroop-word" id="cm-word-bottom">BLUE</div>
@@ -3444,6 +3496,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
     }
 
     nextTrial() {
+      if (document.activeElement && document.activeElement.tagName === 'BUTTON') document.activeElement.blur();
       const shouldMatch = Math.random() < 0.50;
       this.topInk = this.palette[Math.floor(Math.random() * this.palette.length)];
 
@@ -3459,7 +3512,10 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
         this.bottomWord = nonMatches[Math.floor(Math.random() * nonMatches.length)];
       }
 
-      this.bottomInk = this.palette[Math.floor(Math.random() * this.palette.length)];
+      // Keep the bottom ink different from the top ink so the two cards
+      // are always distinguishable at a glance (the bottom ink is a distractor).
+      const bottomInkChoices = this.palette.filter(c => c.name !== this.topInk.name);
+      this.bottomInk = bottomInkChoices[Math.floor(Math.random() * bottomInkChoices.length)];
 
       const topWordEl = document.getElementById('cm-word-top');
       const btmWordEl = document.getElementById('cm-word-bottom');
@@ -3474,8 +3530,17 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
       this.trialStartTime = Date.now();
     }
 
+    setFeedback(msg, kind) {
+      const el = document.getElementById('cm-feedback');
+      if (!el) return;
+      el.textContent = msg;
+      el.className = 'game-feedback' + (kind ? ' ' + kind : '');
+    }
+
     handleAnswer(userSaysYes) {
-      if (!this.isActive) return;
+      if (!this.isActive || this.awaitingNext) return;
+      this.awaitingNext = true;
+      if (document.activeElement) document.activeElement.blur();
 
       const actualMatch = (this.topInk.name === this.bottomWord.name);
       const isCorrect = (userSaysYes === actualMatch);
@@ -3490,40 +3555,50 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
         this.streak += 1;
         if (this.streak > this.maxStreak) this.maxStreak = this.streak;
 
-        const multiplier = 1 + Math.min(Math.floor(this.streak / 3) * 0.25, 2.5);
+        const mult = 1 + Math.min(Math.floor(this.streak / 3) * 0.25, 2.5);
         const speedPoints = Math.max(50, 420 - Math.round(rt * 0.3));
-        const roundScore = Math.round(speedPoints * multiplier);
+        const roundScore = Math.round(speedPoints * mult);
         this.score += roundScore;
 
         soundEngine.playCorrect();
         if (this.streak % 4 === 0) soundEngine.playStreak(this.streak);
+        this.setFeedback(`✓ Correct! +${roundScore} · Streak ${this.streak} · Multiplier ${mult.toFixed(1)}x`, 'correct');
 
         [topCardEl, btmCardEl].forEach(c => {
           if (c) {
             c.classList.add('correct-glow');
-            setTimeout(() => c.classList.remove('correct-glow'), 180);
+            setTimeout(() => c.classList.remove('correct-glow'), 600);
           }
         });
       } else {
         this.wrongCount += 1;
         this.streak = 0;
         soundEngine.playWrong();
+        this.setFeedback(`✗ Wrong — the answer was ${actualMatch ? 'YES' : 'NO'} · Streak lost · Multiplier back to 1.0x`, 'wrong');
 
         [topCardEl, btmCardEl].forEach(c => {
           if (c) {
             c.classList.add('wrong-shake');
-            setTimeout(() => c.classList.remove('wrong-shake'), 240);
+            setTimeout(() => c.classList.remove('wrong-shake'), 600);
           }
         });
       }
 
       this.updateHUD();
-      this.nextTrial();
+      this.feedbackTimer = setTimeout(() => {
+        this.awaitingNext = false;
+        if (!this.isActive) return;
+        this.setFeedback('', '');
+        this.nextTrial();
+      }, 650);
     }
 
     updateHUD() {
       const scoreEl = document.getElementById('cm-score');
       if (scoreEl) scoreEl.textContent = this.score.toLocaleString();
+
+      const streakEl = document.getElementById('cm-streak');
+      if (streakEl) streakEl.textContent = this.streak;
 
       const multEl = document.getElementById('cm-mult');
       if (multEl) {
@@ -3600,6 +3675,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
 
     stop() {
       this.isActive = false;
+      if (this.feedbackTimer) { clearTimeout(this.feedbackTimer); this.feedbackTimer = null; }
       if (this.timerInterval) clearInterval(this.timerInterval);
       if (this.keyListener) {
         window.removeEventListener('keydown', this.keyListener);
@@ -3615,6 +3691,10 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
             <span class="hud-val hud-accent" id="cc-score">0</span>
           </div>
           <div class="hud-item">
+            <span class="hud-label">Streak</span>
+            <span class="hud-val" id="cc-streak">0</span>
+          </div>
+          <div class="hud-item">
             <span class="hud-label">Time Left</span>
             <span class="hud-val" id="cc-timer">${this.timeLeft}s</span>
           </div>
@@ -3623,6 +3703,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
             <span class="hud-val hud-bonus" id="cc-mult">1.0x</span>
           </div>
         </div>
+        <div class="game-feedback" id="cc-feedback" aria-live="polite"></div>
 
         <div class="chalkboard-stage">
           <div class="chalkboard-prompt">Compare the values of Side A and Side B</div>
@@ -3643,17 +3724,14 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
             <button class="btn-chalk" id="cc-btn-left">
               <span class="chalk-key-hint">Left / 1</span>
               <strong>A &gt; B</strong>
-              <span class="chalk-sub-label">A is Greater</span>
             </button>
             <button class="btn-chalk" id="cc-btn-equal">
               <span class="chalk-key-hint">Down / 2</span>
               <strong>A = B</strong>
-              <span class="chalk-sub-label">Equal Values</span>
             </button>
             <button class="btn-chalk" id="cc-btn-right">
               <span class="chalk-key-hint">Right / 3</span>
               <strong>A &lt; B</strong>
-              <span class="chalk-sub-label">B is Greater</span>
             </button>
           </div>
         </div>
@@ -3759,6 +3837,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
     }
 
     nextProblem() {
+      if (document.activeElement && document.activeElement.tagName === 'BUTTON') document.activeElement.blur();
       const diff = this.streak < 3 ? 1 : (this.streak < 7 ? 2 : 3);
       this.sideA = this.generateExpression(diff);
 
@@ -3794,8 +3873,17 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
       this.trialStartTime = Date.now();
     }
 
+    setFeedback(msg, kind) {
+      const el = document.getElementById('cc-feedback');
+      if (!el) return;
+      el.textContent = msg;
+      el.className = 'game-feedback' + (kind ? ' ' + kind : '');
+    }
+
     handleAnswer(choice) {
-      if (!this.isActive) return;
+      if (!this.isActive || this.awaitingNext) return;
+      this.awaitingNext = true;
+      if (document.activeElement) document.activeElement.blur();
 
       let correctChoice = '=';
       if (this.sideA.val > this.sideB.val) correctChoice = 'A';
@@ -3813,40 +3901,51 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
         this.streak += 1;
         if (this.streak > this.maxStreak) this.maxStreak = this.streak;
 
-        const multiplier = 1 + Math.min(Math.floor(this.streak / 3) * 0.25, 2.5);
+        const mult = 1 + Math.min(Math.floor(this.streak / 3) * 0.25, 2.5);
         const speedPoints = Math.max(50, 450 - Math.round(rt * 0.25));
-        const roundScore = Math.round(speedPoints * multiplier);
+        const roundScore = Math.round(speedPoints * mult);
         this.score += roundScore;
 
         soundEngine.playCorrect();
         if (this.streak % 4 === 0) soundEngine.playStreak(this.streak);
+        this.setFeedback(`✓ Correct! +${roundScore} · Streak ${this.streak} · Multiplier ${mult.toFixed(1)}x`, 'correct');
 
         [panelA, panelB].forEach(p => {
           if (p) {
             p.classList.add('correct-glow');
-            setTimeout(() => p.classList.remove('correct-glow'), 180);
+            setTimeout(() => p.classList.remove('correct-glow'), 600);
           }
         });
       } else {
         this.wrongCount += 1;
         this.streak = 0;
         soundEngine.playWrong();
+        const correctText = correctChoice === '=' ? 'the sides are equal' : (correctChoice === 'A' ? 'Side A is greater' : 'Side B is greater');
+        this.setFeedback(`✗ Wrong — ${correctText} · Streak lost · Multiplier back to 1.0x`, 'wrong');
 
         [panelA, panelB].forEach(p => {
           if (p) {
             p.classList.add('wrong-shake');
-            setTimeout(() => p.classList.remove('wrong-shake'), 240);
+            setTimeout(() => p.classList.remove('wrong-shake'), 600);
           }
         });
       }
 
       this.updateHUD();
-      this.nextProblem();
+      this.feedbackTimer = setTimeout(() => {
+        this.awaitingNext = false;
+        if (!this.isActive) return;
+        this.setFeedback('', '');
+        this.nextProblem();
+      }, 650);
     }
 
     updateHUD() {
       const scoreEl = document.getElementById('cc-score');
       if (scoreEl) scoreEl.textContent = this.score.toLocaleString();
+
+      const streakEl = document.getElementById('cc-streak');
+      if (streakEl) streakEl.textContent = this.streak;
 
       const multEl = document.getElementById('cc-mult');
       if (multEl) {
@@ -3957,6 +4056,7 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
     }
 
     showScreen(screenId) {
+      window.scrollTo(0, 0);
       if (screenId !== 'game-arena' && this.currentGameInstance) {
         this.currentGameInstance.stop();
         this.currentGameInstance = null;
@@ -3980,8 +4080,9 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
     updateHeaderAndDashboard() {
       const state = stateManager.state;
 
+      const totalPlayed = Object.values(state.categories).reduce((n, c) => n + (c.gamesPlayed || 0), 0);
       const bpiEl = document.getElementById('header-bpi-val');
-      if (bpiEl) bpiEl.textContent = state.overallBPI;
+      if (bpiEl) bpiEl.textContent = totalPlayed > 0 ? state.overallBPI : '–';
 
       const streakEl = document.getElementById('header-streak-val');
       if (streakEl) streakEl.textContent = state.streak.current;
@@ -3995,8 +4096,13 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
       this.renderCategoryCards();
       this.renderDailyWorkoutStatus();
 
+      const radarCanvas = document.getElementById('radar-canvas-dash');
+      const radarNote = document.getElementById('radar-empty-note');
+      if (radarCanvas) radarCanvas.style.display = totalPlayed > 0 ? '' : 'none';
+      if (radarNote) radarNote.style.display = totalPlayed > 0 ? 'none' : 'block';
+
       setTimeout(() => {
-        chartEngine.renderRadarChart('radar-canvas-dash', state.categories);
+        if (totalPlayed > 0) chartEngine.renderRadarChart('radar-canvas-dash', state.categories);
       }, 50);
     }
 
@@ -4019,10 +4125,10 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
         card.innerHTML = `
           <div class="cat-card-header">
             <span class="cat-icon" style="background: ${cat.color}20; color: ${cat.color};">${gameDef ? gameDef.icon : '🧠'}</span>
-            <span class="cat-bpi" style="color: ${cat.color};">${cat.bpi || 850} BPI</span>
+            <span class="cat-bpi" style="color: ${cat.color};">${cat.gamesPlayed > 0 ? cat.bpi + ' BPI' : '–'}</span>
           </div>
           <div class="cat-name">${cat.name}</div>
-          <div class="cat-meta">Best Score: ${(cat.bestScore || 0).toLocaleString()}</div>
+          <div class="cat-meta">${cat.gamesPlayed > 0 ? 'Best Score: ' + cat.bestScore.toLocaleString() : 'Not played yet'}</div>
           <button class="btn-cat-play" data-game="${gameDef ? gameDef.id : ''}">Train Now →</button>
         `;
 
@@ -4102,8 +4208,8 @@ section:nth-of-type(4),.card:nth-child(4),[class*="-card"]:nth-child(4){animatio
             💡 <em>${game.instruction}</em>
           </div>
           <div class="game-hub-stats">
-            <div><span class="stat-lbl">Index:</span> <strong>${cat.bpi} BPI</strong></div>
-            <div><span class="stat-lbl">High Score:</span> <strong>${cat.bestScore.toLocaleString()}</strong></div>
+            <div><span class="stat-lbl">Index:</span> <strong>${(cat.gamesPlayed || 0) > 0 ? cat.bpi + ' BPI' : '–'}</strong></div>
+            <div><span class="stat-lbl">High Score:</span> <strong>${(cat.gamesPlayed || 0) > 0 ? cat.bestScore.toLocaleString() : '–'}</strong></div>
           </div>
           <button class="btn-play-game" data-game="${game.id}">Play Game</button>
         `;
